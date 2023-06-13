@@ -1,0 +1,2988 @@
+
+********Solution Results for Multi Period Farming Model with Sample Data*********
+
+Dataset: input/produce_period_info_1.xls
+
+The following produce mix needs to be planted:
+
+
+PERIOD 1:
+
+To Plant:
+
+4983.76 kg of Pumpkin across 0.55 acres
+Total Land Used by Pumpkin at the end of period 1(UOut): 0.55 
+
+18951.60 kg of Beetroot across 1.26 acres
+Total Land Used by Beetroot at the end of period 1(UOut): 1.26 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 1(UOut): 0.00 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 1(UOut): 0.00 
+
+2084.78 kg of Cauliflower across 0.26 acres
+Total Land Used by Cauliflower at the end of period 1(UOut): 0.26 
+
+3747.22 kg of Broccoli across 1.28 acres
+Total Land Used by Broccoli at the end of period 1(UOut): 1.28 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 1 (OCC[t]): 3.35 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 2:
+
+Total Land Available for Planting at the beginning of period 2 (V[t]): 6.65 
+
+OCC[t-1] = OCC[1] : 3.35 
+
+To Plant:
+
+2963.93 kg of Pumpkin across 0.33 acres
+Total Land Used by Pumpkin at the end of period 2(UOut): 0.87 
+
+884.94 kg of Beetroot across 0.06 acres
+Total Land Used by Beetroot at the end of period 2(UOut): 1.32 
+
+3427.00 kg of Red Cabbage across 0.24 acres
+Total Land Used by Red Cabbage at the end of period 2(UOut): 0.24 
+
+4161.00 kg of Eggplant across 0.17 acres
+Total Land Used by Eggplant at the end of period 2(UOut): 0.17 
+
+688.76 kg of Cauliflower across 0.09 acres
+Total Land Used by Cauliflower at the end of period 2(UOut): 0.34 
+
+577.32 kg of Broccoli across 0.20 acres
+Total Land Used by Broccoli at the end of period 2(UOut): 1.47 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 2 (OCC[t]): 4.43 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+3310.00 kg of Broccoli
+
+
+PERIOD 3:
+
+Total Land Available for Planting at the beginning of period 3 (V[t]): 5.57 
+
+OCC[t-1] = OCC[2] : 4.43 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 3(UOut): 0.87 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 3(UOut): 1.32 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 3(UOut): 0.24 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 3(UOut): 0.17 
+
+1680.37 kg of Cauliflower across 0.21 acres
+Total Land Used by Cauliflower at the end of period 3(UOut): 0.55 
+
+832.62 kg of Broccoli across 0.28 acres
+Total Land Used by Broccoli at the end of period 3(UOut): 1.76 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 3 (OCC[t]): 4.92 
+
+To Purchase (At the start of the period):
+
+3317.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+4761.00 kg of Eggplant
+
+2819.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 4:
+
+Total Land Available for Planting at the beginning of period 4 (V[t]): 5.08 
+
+OCC[t-1] = OCC[3] : 4.92 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 4(UOut): 0.87 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 4(UOut): 1.32 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 4(UOut): 0.24 
+
+7588.64 kg of Eggplant across 0.32 acres
+Total Land Used by Eggplant at the end of period 4(UOut): 0.49 
+
+8251.65 kg of Cauliflower across 1.02 acres
+Total Land Used by Cauliflower at the end of period 4(UOut): 1.57 
+
+1154.74 kg of Broccoli across 0.39 acres
+Total Land Used by Broccoli at the end of period 4(UOut): 2.15 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 4 (OCC[t]): 6.65 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+3589.00 kg of Beetroot
+
+3402.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 5:
+
+Total Land Available for Planting at the beginning of period 5 (V[t]): 3.35 
+
+OCC[t-1] = OCC[4] : 6.65 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 5(UOut): 0.87 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 5(UOut): 1.32 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 5(UOut): 0.24 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 5(UOut): 0.49 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 5(UOut): 1.57 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 5(UOut): 2.15 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 5 (OCC[t]): 6.65 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 6:
+
+Total Land Available for Planting at the beginning of period 6 (V[t]): 3.35 
+
+OCC[t-1] = OCC[5] : 6.65 
+
+To Plant:
+
+1196.79 kg of Pumpkin across 0.13 acres
+Total Land Used by Pumpkin at the end of period 6(UOut): 1.01 
+
+1376.34 kg of Beetroot across 0.09 acres
+Total Land Used by Beetroot at the end of period 6(UOut): 1.41 
+
+4264.00 kg of Red Cabbage across 0.30 acres
+Total Land Used by Red Cabbage at the end of period 6(UOut): 0.55 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 6(UOut): 0.49 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 6(UOut): 1.57 
+
+1343.49 kg of Broccoli across 0.46 acres
+Total Land Used by Broccoli at the end of period 6(UOut): 2.61 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 6 (OCC[t]): 7.64 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+3530.00 kg of Broccoli
+
+
+PERIOD 7:
+
+Total Land Available for Planting at the beginning of period 7 (V[t]): 2.36 
+
+OCC[t-1] = OCC[6] : 7.64 
+
+To Plant:
+
+4821.29 kg of Pumpkin across 0.53 acres
+Total Land Used by Pumpkin at the end of period 7(UOut): 1.54 
+
+1231.49 kg of Beetroot across 0.08 acres
+Total Land Used by Beetroot at the end of period 7(UOut): 1.50 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 7(UOut): 0.55 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 7(UOut): 0.49 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 7(UOut): 1.57 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 7(UOut): 2.61 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 7 (OCC[t]): 8.25 
+
+To Purchase (At the start of the period):
+
+4623.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+4839.00 kg of Eggplant
+
+3247.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 8:
+
+Total Land Available for Planting at the beginning of period 8 (V[t]): 1.75 
+
+OCC[t-1] = OCC[7] : 8.25 
+
+To Plant:
+
+8792.11 kg of Pumpkin across 0.97 acres
+Total Land Used by Pumpkin at the end of period 8(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 8(UOut): 1.50 
+
+7639.47 kg of Red Cabbage across 0.55 acres
+Total Land Used by Red Cabbage at the end of period 8(UOut): 1.10 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 8(UOut): 0.49 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 8(UOut): 1.57 
+
+704.16 kg of Broccoli across 0.24 acres
+Total Land Used by Broccoli at the end of period 8(UOut): 2.85 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 8 (OCC[t]): 10.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+3106.00 kg of Beetroot
+
+4286.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 9:
+
+Total Land Available for Planting at the beginning of period 9 (V[t]): 0.00 
+
+OCC[t-1] = OCC[8] : 10.00 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 9(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 9(UOut): 0.23 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 9(UOut): 1.10 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 9(UOut): 0.49 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 9(UOut): 1.57 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 9(UOut): 2.85 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 9 (OCC[t]): 8.74 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 10:
+
+Total Land Available for Planting at the beginning of period 10 (V[t]): 1.26 
+
+OCC[t-1] = OCC[9] : 8.74 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 10(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 10(UOut): 0.17 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 10(UOut): 1.10 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 10(UOut): 0.49 
+
+477.51 kg of Cauliflower across 0.06 acres
+Total Land Used by Cauliflower at the end of period 10(UOut): 1.63 
+
+3710.72 kg of Broccoli across 1.26 acres
+Total Land Used by Broccoli at the end of period 10(UOut): 4.11 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 10 (OCC[t]): 10.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+4256.00 kg of Broccoli
+
+
+PERIOD 11:
+
+Total Land Available for Planting at the beginning of period 11 (V[t]): 0.00 
+
+OCC[t-1] = OCC[10] : 10.00 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 11(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 11(UOut): 0.17 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 11(UOut): 1.10 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 11(UOut): 0.49 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 11(UOut): 1.37 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 11(UOut): 4.11 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 11 (OCC[t]): 9.74 
+
+To Purchase (At the start of the period):
+
+2981.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 12:
+
+Total Land Available for Planting at the beginning of period 12 (V[t]): 0.26 
+
+OCC[t-1] = OCC[11] : 9.74 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 12(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 12(UOut): 0.17 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 12(UOut): 0.85 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 12(UOut): 0.32 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 12(UOut): 1.29 
+
+756.49 kg of Broccoli across 0.26 acres
+Total Land Used by Broccoli at the end of period 12(UOut): 4.37 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 12 (OCC[t]): 9.50 
+
+To Purchase (At the start of the period):
+
+4015.26 kg of Pumpkin
+
+-0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+4487.71 kg of Broccoli
+
+
+PERIOD 13:
+
+Total Land Available for Planting at the beginning of period 13 (V[t]): 0.50 
+
+OCC[t-1] = OCC[12] : 9.50 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 13(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 13(UOut): 0.17 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 13(UOut): 0.85 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 13(UOut): 0.32 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 13(UOut): 1.08 
+
+1016.64 kg of Broccoli across 0.35 acres
+Total Land Used by Broccoli at the end of period 13(UOut): 4.71 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 13 (OCC[t]): 9.64 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 14:
+
+Total Land Available for Planting at the beginning of period 14 (V[t]): 0.36 
+
+OCC[t-1] = OCC[13] : 9.64 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 14(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 14(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 14(UOut): 0.85 
+
+3765.00 kg of Eggplant across 0.16 acres
+Total Land Used by Eggplant at the end of period 14(UOut): 0.16 
+
+2952.00 kg of Cauliflower across 0.36 acres
+Total Land Used by Cauliflower at the end of period 14(UOut): 0.42 
+
+1071.17 kg of Broccoli across 0.36 acres
+Total Land Used by Broccoli at the end of period 14(UOut): 5.08 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 14 (OCC[t]): 9.09 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 15:
+
+Total Land Available for Planting at the beginning of period 15 (V[t]): 0.91 
+
+OCC[t-1] = OCC[14] : 9.09 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 15(UOut): 2.50 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 15(UOut): 0.00 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 15(UOut): 0.85 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 15(UOut): 0.16 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 15(UOut): 0.42 
+
+2660.44 kg of Broccoli across 0.91 acres
+Total Land Used by Broccoli at the end of period 15(UOut): 5.98 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 15 (OCC[t]): 9.92 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+-0.00 kg of Eggplant
+
+-0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 16:
+
+Total Land Available for Planting at the beginning of period 16 (V[t]): 0.08 
+
+OCC[t-1] = OCC[15] : 9.92 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 16(UOut): 2.50 
+
+1231.49 kg of Beetroot across 0.08 acres
+Total Land Used by Beetroot at the end of period 16(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 16(UOut): 0.55 
+
+487.78 kg of Eggplant across 0.02 acres
+Total Land Used by Eggplant at the end of period 16(UOut): 0.18 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 16(UOut): 0.42 
+
+241.13 kg of Broccoli across 0.08 acres
+Total Land Used by Broccoli at the end of period 16(UOut): 6.07 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 16 (OCC[t]): 9.80 
+
+To Purchase (At the start of the period):
+
+-0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 17:
+
+Total Land Available for Planting at the beginning of period 17 (V[t]): 0.20 
+
+OCC[t-1] = OCC[16] : 9.80 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 17(UOut): 1.95 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 17(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 17(UOut): 0.55 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 17(UOut): 0.18 
+
+1636.19 kg of Cauliflower across 0.20 acres
+Total Land Used by Cauliflower at the end of period 17(UOut): 0.63 
+
+593.71 kg of Broccoli across 0.20 acres
+Total Land Used by Broccoli at the end of period 17(UOut): 6.27 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 17 (OCC[t]): 9.65 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 18:
+
+Total Land Available for Planting at the beginning of period 18 (V[t]): 0.35 
+
+OCC[t-1] = OCC[17] : 9.65 
+
+To Plant:
+
+1557.04 kg of Pumpkin across 0.17 acres
+Total Land Used by Pumpkin at the end of period 18(UOut): 1.80 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 18(UOut): 0.08 
+
+4844.00 kg of Red Cabbage across 0.35 acres
+Total Land Used by Red Cabbage at the end of period 18(UOut): 0.35 
+
+2229.93 kg of Eggplant across 0.09 acres
+Total Land Used by Eggplant at the end of period 18(UOut): 0.27 
+
+2343.90 kg of Cauliflower across 0.29 acres
+Total Land Used by Cauliflower at the end of period 18(UOut): 0.92 
+
+343.60 kg of Broccoli across 0.12 acres
+Total Land Used by Broccoli at the end of period 18(UOut): 6.39 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 18 (OCC[t]): 9.80 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 19:
+
+Total Land Available for Planting at the beginning of period 19 (V[t]): 0.20 
+
+OCC[t-1] = OCC[18] : 9.80 
+
+To Plant:
+
+1766.51 kg of Pumpkin across 0.19 acres
+Total Land Used by Pumpkin at the end of period 19(UOut): 1.99 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 19(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 19(UOut): 0.35 
+
+3444.30 kg of Eggplant across 0.14 acres
+Total Land Used by Eggplant at the end of period 19(UOut): 0.41 
+
+1626.32 kg of Cauliflower across 0.20 acres
+Total Land Used by Cauliflower at the end of period 19(UOut): 1.12 
+
+590.13 kg of Broccoli across 0.20 acres
+Total Land Used by Broccoli at the end of period 19(UOut): 5.31 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 19 (OCC[t]): 9.26 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 20:
+
+Total Land Available for Planting at the beginning of period 20 (V[t]): 0.74 
+
+OCC[t-1] = OCC[19] : 9.26 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 20(UOut): 1.99 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 20(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 20(UOut): 0.35 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 20(UOut): 0.41 
+
+2068.54 kg of Cauliflower across 0.26 acres
+Total Land Used by Cauliflower at the end of period 20(UOut): 1.31 
+
+2164.95 kg of Broccoli across 0.74 acres
+Total Land Used by Broccoli at the end of period 20(UOut): 5.85 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 20 (OCC[t]): 10.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+-0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 21:
+
+Total Land Available for Planting at the beginning of period 21 (V[t]): 0.00 
+
+OCC[t-1] = OCC[20] : 10.00 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 21(UOut): 1.99 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 21(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 21(UOut): 0.35 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 21(UOut): 0.41 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 21(UOut): 1.31 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 21(UOut): 5.57 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 21 (OCC[t]): 9.72 
+
+To Purchase (At the start of the period):
+
+-0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 22:
+
+Total Land Available for Planting at the beginning of period 22 (V[t]): 0.28 
+
+OCC[t-1] = OCC[21] : 9.72 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 22(UOut): 1.86 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 22(UOut): 0.08 
+
+3572.00 kg of Red Cabbage across 0.28 acres
+Total Land Used by Red Cabbage at the end of period 22(UOut): 0.63 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 22(UOut): 0.41 
+
+1312.42 kg of Cauliflower across 0.18 acres
+Total Land Used by Cauliflower at the end of period 22(UOut): 1.49 
+
+749.35 kg of Broccoli across 0.28 acres
+Total Land Used by Broccoli at the end of period 22(UOut): 5.46 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 22 (OCC[t]): 9.94 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+-0.00 kg of Broccoli
+
+
+PERIOD 23:
+
+Total Land Available for Planting at the beginning of period 23 (V[t]): 0.06 
+
+OCC[t-1] = OCC[22] : 9.94 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 23(UOut): 1.33 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 23(UOut): 0.08 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 23(UOut): 0.63 
+
+1320.75 kg of Eggplant across 0.06 acres
+Total Land Used by Eggplant at the end of period 23(UOut): 0.47 
+
+445.42 kg of Cauliflower across 0.06 acres
+Total Land Used by Cauliflower at the end of period 23(UOut): 1.55 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 23(UOut): 5.46 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 23 (OCC[t]): 9.53 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 24:
+
+Total Land Available for Planting at the beginning of period 24 (V[t]): 0.47 
+
+OCC[t-1] = OCC[23] : 9.53 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 24(UOut): 0.37 
+
+3436.59 kg of Beetroot across 0.25 acres
+Total Land Used by Beetroot at the end of period 24(UOut): 0.25 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 24(UOut): 0.63 
+
+2403.30 kg of Eggplant across 0.11 acres
+Total Land Used by Eggplant at the end of period 24(UOut): 0.43 
+
+3417.44 kg of Cauliflower across 0.47 acres
+Total Land Used by Cauliflower at the end of period 24(UOut): 1.66 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 24(UOut): 5.00 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 24 (OCC[t]): 8.34 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+-0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 25:
+
+Total Land Available for Planting at the beginning of period 25 (V[t]): 1.66 
+
+OCC[t-1] = OCC[24] : 8.34 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 25(UOut): 0.37 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 25(UOut): 0.25 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 25(UOut): 0.63 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 25(UOut): 0.43 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 25(UOut): 1.66 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 25(UOut): 5.00 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 25 (OCC[t]): 8.34 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 26:
+
+Total Land Available for Planting at the beginning of period 26 (V[t]): 1.66 
+
+OCC[t-1] = OCC[25] : 8.34 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 26(UOut): 0.37 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 26(UOut): 0.25 
+
+3277.00 kg of Red Cabbage across 0.26 acres
+Total Land Used by Red Cabbage at the end of period 26(UOut): 0.89 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 26(UOut): 0.41 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 26(UOut): 1.66 
+
+4394.00 kg of Broccoli across 1.66 acres
+Total Land Used by Broccoli at the end of period 26(UOut): 6.42 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 26 (OCC[t]): 10.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 27:
+
+Total Land Available for Planting at the beginning of period 27 (V[t]): 0.00 
+
+OCC[t-1] = OCC[26] : 10.00 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 27(UOut): 0.37 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 27(UOut): 0.25 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 27(UOut): 0.89 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 27(UOut): 0.41 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 27(UOut): 1.46 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 27(UOut): 6.42 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 27 (OCC[t]): 9.80 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 28:
+
+Total Land Available for Planting at the beginning of period 28 (V[t]): 0.20 
+
+OCC[t-1] = OCC[27] : 9.80 
+
+To Plant:
+
+1654.14 kg of Pumpkin across 0.20 acres
+Total Land Used by Pumpkin at the end of period 28(UOut): 0.57 
+
+2729.00 kg of Beetroot across 0.20 acres
+Total Land Used by Beetroot at the end of period 28(UOut): 0.46 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 28(UOut): 0.54 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 28(UOut): 0.32 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 28(UOut): 1.17 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 28(UOut): 5.16 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 28 (OCC[t]): 8.21 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 29:
+
+Total Land Available for Planting at the beginning of period 29 (V[t]): 1.79 
+
+OCC[t-1] = OCC[28] : 8.21 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 29(UOut): 0.57 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 29(UOut): 0.46 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 29(UOut): 0.54 
+
+1195.14 kg of Eggplant across 0.06 acres
+Total Land Used by Eggplant at the end of period 29(UOut): 0.23 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 29(UOut): 0.97 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 29(UOut): 5.16 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 29 (OCC[t]): 7.92 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 30:
+
+Total Land Available for Planting at the beginning of period 30 (V[t]): 2.08 
+
+OCC[t-1] = OCC[29] : 7.92 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 30(UOut): 0.57 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 30(UOut): 0.46 
+
+4221.00 kg of Red Cabbage across 0.34 acres
+Total Land Used by Red Cabbage at the end of period 30(UOut): 0.88 
+
+2910.81 kg of Eggplant across 0.13 acres
+Total Land Used by Eggplant at the end of period 30(UOut): 0.36 
+
+3877.00 kg of Cauliflower across 0.53 acres
+Total Land Used by Cauliflower at the end of period 30(UOut): 1.24 
+
+4203.00 kg of Broccoli across 1.59 acres
+Total Land Used by Broccoli at the end of period 30(UOut): 6.49 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 30 (OCC[t]): 10.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 31:
+
+Total Land Available for Planting at the beginning of period 31 (V[t]): 0.00 
+
+OCC[t-1] = OCC[30] : 10.00 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 31(UOut): 0.57 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 31(UOut): 0.46 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 31(UOut): 0.88 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 31(UOut): 0.36 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 31(UOut): 1.24 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 31(UOut): 6.15 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 31 (OCC[t]): 9.65 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+-0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 32:
+
+Total Land Available for Planting at the beginning of period 32 (V[t]): 0.35 
+
+OCC[t-1] = OCC[31] : 9.65 
+
+To Plant:
+
+2734.00 kg of Pumpkin across 0.33 acres
+Total Land Used by Pumpkin at the end of period 32(UOut): 0.90 
+
+4673.00 kg of Beetroot across 0.35 acres
+Total Land Used by Beetroot at the end of period 32(UOut): 0.55 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 32(UOut): 0.60 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 32(UOut): 0.36 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 32(UOut): 1.06 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 32(UOut): 5.78 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 32 (OCC[t]): 9.25 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+-0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 33:
+
+Total Land Available for Planting at the beginning of period 33 (V[t]): 0.75 
+
+OCC[t-1] = OCC[32] : 9.25 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 33(UOut): 0.90 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 33(UOut): 0.55 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 33(UOut): 0.60 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 33(UOut): 0.30 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 33(UOut): 1.00 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 33(UOut): 4.88 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 33 (OCC[t]): 8.22 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 34:
+
+Total Land Available for Planting at the beginning of period 34 (V[t]): 1.78 
+
+OCC[t-1] = OCC[33] : 8.22 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 34(UOut): 0.73 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 34(UOut): 0.55 
+
+3359.00 kg of Red Cabbage across 0.27 acres
+Total Land Used by Red Cabbage at the end of period 34(UOut): 0.86 
+
+2608.00 kg of Eggplant across 0.12 acres
+Total Land Used by Eggplant at the end of period 34(UOut): 0.31 
+
+3252.00 kg of Cauliflower across 0.45 acres
+Total Land Used by Cauliflower at the end of period 34(UOut): 0.98 
+
+4697.00 kg of Broccoli across 1.78 acres
+Total Land Used by Broccoli at the end of period 34(UOut): 6.57 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 34 (OCC[t]): 10.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 35:
+
+Total Land Available for Planting at the beginning of period 35 (V[t]): 0.00 
+
+OCC[t-1] = OCC[34] : 10.00 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 35(UOut): 0.54 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 35(UOut): 0.55 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 35(UOut): 0.86 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 35(UOut): 0.31 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 35(UOut): 0.98 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 35(UOut): 6.37 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 35 (OCC[t]): 9.60 
+
+To Purchase (At the start of the period):
+
+-0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+-0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 36:
+
+Total Land Available for Planting at the beginning of period 36 (V[t]): 0.40 
+
+OCC[t-1] = OCC[35] : 9.60 
+
+To Plant:
+
+3244.00 kg of Pumpkin across 0.40 acres
+Total Land Used by Pumpkin at the end of period 36(UOut): 0.93 
+
+4572.00 kg of Beetroot across 0.34 acres
+Total Land Used by Beetroot at the end of period 36(UOut): 0.68 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 36(UOut): 0.60 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 36(UOut): 0.31 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 36(UOut): 0.98 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 36(UOut): 6.25 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 36 (OCC[t]): 9.76 
+
+To Purchase (At the start of the period):
+
+-0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+-0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 37:
+
+Total Land Available for Planting at the beginning of period 37 (V[t]): 0.24 
+
+OCC[t-1] = OCC[36] : 9.76 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 37(UOut): 0.93 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 37(UOut): 0.68 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 37(UOut): 0.60 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 37(UOut): 0.31 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 37(UOut): 0.98 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 37(UOut): 6.05 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 37 (OCC[t]): 9.56 
+
+To Purchase (At the start of the period):
+
+-0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 38:
+
+Total Land Available for Planting at the beginning of period 38 (V[t]): 0.44 
+
+OCC[t-1] = OCC[37] : 9.56 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 38(UOut): 0.93 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 38(UOut): 0.68 
+
+4023.00 kg of Red Cabbage across 0.32 acres
+Total Land Used by Red Cabbage at the end of period 38(UOut): 0.92 
+
+3435.00 kg of Eggplant across 0.16 acres
+Total Land Used by Eggplant at the end of period 38(UOut): 0.47 
+
+3216.00 kg of Cauliflower across 0.44 acres
+Total Land Used by Cauliflower at the end of period 38(UOut): 1.42 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 38(UOut): 5.31 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 38 (OCC[t]): 9.74 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 39:
+
+Total Land Available for Planting at the beginning of period 39 (V[t]): 0.26 
+
+OCC[t-1] = OCC[38] : 9.74 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 39(UOut): 0.93 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 39(UOut): 0.68 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 39(UOut): 0.92 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 39(UOut): 0.41 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 39(UOut): 1.42 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 39(UOut): 5.31 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 39 (OCC[t]): 9.69 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+-0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 40:
+
+Total Land Available for Planting at the beginning of period 40 (V[t]): 0.31 
+
+OCC[t-1] = OCC[39] : 9.69 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 40(UOut): 0.93 
+
+4241.00 kg of Beetroot across 0.31 acres
+Total Land Used by Beetroot at the end of period 40(UOut): 0.65 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 40(UOut): 0.59 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 40(UOut): 0.28 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 40(UOut): 0.89 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 40(UOut): 5.03 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 40 (OCC[t]): 8.37 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 41:
+
+Total Land Available for Planting at the beginning of period 41 (V[t]): 1.63 
+
+OCC[t-1] = OCC[40] : 8.37 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 41(UOut): 0.93 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 41(UOut): 0.65 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 41(UOut): 0.59 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 41(UOut): 0.28 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 41(UOut): 0.89 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 41(UOut): 5.03 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 41 (OCC[t]): 8.37 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 42:
+
+Total Land Available for Planting at the beginning of period 42 (V[t]): 1.63 
+
+OCC[t-1] = OCC[41] : 8.37 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 42(UOut): 0.93 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 42(UOut): 0.65 
+
+3646.00 kg of Red Cabbage across 0.26 acres
+Total Land Used by Red Cabbage at the end of period 42(UOut): 0.85 
+
+4470.00 kg of Eggplant across 0.19 acres
+Total Land Used by Eggplant at the end of period 42(UOut): 0.47 
+
+4936.00 kg of Cauliflower across 0.61 acres
+Total Land Used by Cauliflower at the end of period 42(UOut): 1.50 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 42(UOut): 5.03 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 42 (OCC[t]): 9.42 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 43:
+
+Total Land Available for Planting at the beginning of period 43 (V[t]): 0.58 
+
+OCC[t-1] = OCC[42] : 9.42 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 43(UOut): 0.93 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 43(UOut): 0.65 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 43(UOut): 0.85 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 43(UOut): 0.47 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 43(UOut): 1.50 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 43(UOut): 5.03 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 43 (OCC[t]): 9.42 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 44:
+
+Total Land Available for Planting at the beginning of period 44 (V[t]): 0.58 
+
+OCC[t-1] = OCC[43] : 9.42 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 44(UOut): 0.73 
+
+4957.00 kg of Beetroot across 0.33 acres
+Total Land Used by Beetroot at the end of period 44(UOut): 0.64 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 44(UOut): 0.58 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 44(UOut): 0.35 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 44(UOut): 1.05 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 44(UOut): 3.37 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 44 (OCC[t]): 6.72 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 45:
+
+Total Land Available for Planting at the beginning of period 45 (V[t]): 3.28 
+
+OCC[t-1] = OCC[44] : 6.72 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 45(UOut): 0.73 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 45(UOut): 0.64 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 45(UOut): 0.58 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 45(UOut): 0.35 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 45(UOut): 1.05 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 45(UOut): 3.37 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 45 (OCC[t]): 6.72 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 46:
+
+Total Land Available for Planting at the beginning of period 46 (V[t]): 3.28 
+
+OCC[t-1] = OCC[45] : 6.72 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 46(UOut): 0.73 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 46(UOut): 0.64 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 46(UOut): 0.58 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 46(UOut): 0.35 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 46(UOut): 1.05 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 46(UOut): 3.37 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 46 (OCC[t]): 6.72 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 47:
+
+Total Land Available for Planting at the beginning of period 47 (V[t]): 3.28 
+
+OCC[t-1] = OCC[46] : 6.72 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 47(UOut): 0.73 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 47(UOut): 0.64 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 47(UOut): 0.58 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 47(UOut): 0.35 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 47(UOut): 1.05 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 47(UOut): 3.37 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 47 (OCC[t]): 6.72 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 48:
+
+Total Land Available for Planting at the beginning of period 48 (V[t]): 3.28 
+
+OCC[t-1] = OCC[47] : 6.72 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 48(UOut): 0.40 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 48(UOut): 0.33 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 48(UOut): 0.26 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 48(UOut): 0.19 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 48(UOut): 0.61 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 48(UOut): 1.78 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 48 (OCC[t]): 3.56 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 49:
+
+Total Land Available for Planting at the beginning of period 49 (V[t]): 6.44 
+
+OCC[t-1] = OCC[48] : 3.56 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 49(UOut): 0.40 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 49(UOut): 0.33 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 49(UOut): 0.26 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 49(UOut): 0.19 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 49(UOut): 0.61 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 49(UOut): 1.78 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 49 (OCC[t]): 3.56 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 50:
+
+Total Land Available for Planting at the beginning of period 50 (V[t]): 6.44 
+
+OCC[t-1] = OCC[49] : 3.56 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 50(UOut): 0.40 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 50(UOut): 0.33 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 50(UOut): 0.26 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 50(UOut): 0.19 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 50(UOut): 0.61 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 50(UOut): 1.78 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 50 (OCC[t]): 3.56 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 51:
+
+Total Land Available for Planting at the beginning of period 51 (V[t]): 6.44 
+
+OCC[t-1] = OCC[50] : 3.56 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 51(UOut): 0.40 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 51(UOut): 0.33 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 51(UOut): 0.26 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 51(UOut): 0.19 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 51(UOut): 0.61 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 51(UOut): 1.78 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 51 (OCC[t]): 3.56 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+PERIOD 52:
+
+Total Land Available for Planting at the beginning of period 52 (V[t]): 6.44 
+
+OCC[t-1] = OCC[51] : 3.56 
+
+To Plant:
+
+0.00 kg of Pumpkin across 0.00 acres
+Total Land Used by Pumpkin at the end of period 52(UOut): 0.00 
+
+0.00 kg of Beetroot across 0.00 acres
+Total Land Used by Beetroot at the end of period 52(UOut): 0.00 
+
+0.00 kg of Red Cabbage across 0.00 acres
+Total Land Used by Red Cabbage at the end of period 52(UOut): 0.00 
+
+0.00 kg of Eggplant across 0.00 acres
+Total Land Used by Eggplant at the end of period 52(UOut): 0.00 
+
+0.00 kg of Cauliflower across 0.00 acres
+Total Land Used by Cauliflower at the end of period 52(UOut): 0.00 
+
+0.00 kg of Broccoli across 0.00 acres
+Total Land Used by Broccoli at the end of period 52(UOut): 0.00 
+
+TOTAL LAND OCCUPIED AT THE END OF PERIOD 52 (OCC[t]): 0.00 
+
+To Purchase (At the start of the period):
+
+0.00 kg of Pumpkin
+
+0.00 kg of Beetroot
+
+0.00 kg of Red Cabbage
+
+0.00 kg of Eggplant
+
+0.00 kg of Cauliflower
+
+0.00 kg of Broccoli
+
+
+
+Inventory level at the end of each period:
+
+
+Period 1: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 2: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 3: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 4: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 5: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 6: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 7: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 8: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 9: 
+0.00 kg of Pumpkin
+18951.60 kg of Beetroot
+-0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 10: 
+-0.00 kg of Pumpkin
+19457.50 kg of Beetroot
+0.00 kg of Red Cabbage
+-0.00 kg of Eggplant
+-0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 11: 
+-0.00 kg of Pumpkin
+19068.35 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+2084.78 kg of Cauliflower
+-0.00 kg of Broccoli
+
+Period 12: 
+0.00 kg of Pumpkin
+13790.99 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 13: 
+4015.26 kg of Pumpkin
+13515.17 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+1680.37 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 14: 
+3975.10 kg of Pumpkin
+14621.21 kg of Beetroot
+0.00 kg of Red Cabbage
+7588.64 kg of Eggplant
+9881.60 kg of Cauliflower
+4487.71 kg of Broccoli
+
+Period 15: 
+3935.35 kg of Pumpkin
+15560.27 kg of Beetroot
+0.00 kg of Red Cabbage
+7512.76 kg of Eggplant
+9585.16 kg of Cauliflower
+4397.96 kg of Broccoli
+
+Period 16: 
+0.00 kg of Pumpkin
+11694.07 kg of Beetroot
+0.00 kg of Red Cabbage
+3416.63 kg of Eggplant
+4307.60 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 17: 
+4983.76 kg of Pumpkin
+11460.18 kg of Beetroot
+0.00 kg of Red Cabbage
+3382.46 kg of Eggplant
+4178.37 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 18: 
+7897.86 kg of Pumpkin
+11230.98 kg of Beetroot
+7639.47 kg of Red Cabbage
+3348.64 kg of Eggplant
+4053.02 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 19: 
+7818.88 kg of Pumpkin
+11006.36 kg of Beetroot
+7257.50 kg of Red Cabbage
+3315.15 kg of Eggplant
+3931.43 kg of Cauliflower
+3747.22 kg of Broccoli
+
+Period 20: 
+3153.69 kg of Pumpkin
+7090.23 kg of Beetroot
+4046.62 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+1645.60 kg of Broccoli
+
+Period 21: 
+3122.16 kg of Pumpkin
+6948.43 kg of Beetroot
+3844.29 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+2445.30 kg of Broccoli
+
+Period 22: 
+4287.73 kg of Pumpkin
+6809.46 kg of Beetroot
+3652.08 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+3551.13 kg of Broccoli
+
+Period 23: 
+9066.14 kg of Pumpkin
+6673.27 kg of Beetroot
+3469.47 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+3480.11 kg of Broccoli
+
+Period 24: 
+14623.59 kg of Pumpkin
+4327.29 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 25: 
+14477.36 kg of Pumpkin
+4240.75 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 26: 
+14332.58 kg of Pumpkin
+4155.93 kg of Beetroot
+0.00 kg of Red Cabbage
+487.78 kg of Eggplant
+0.00 kg of Cauliflower
+704.16 kg of Broccoli
+
+Period 27: 
+14189.26 kg of Pumpkin
+4072.82 kg of Beetroot
+0.00 kg of Red Cabbage
+482.90 kg of Eggplant
+1636.19 kg of Cauliflower
+690.08 kg of Broccoli
+
+Period 28: 
+10296.37 kg of Pumpkin
+1184.36 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 29: 
+10193.40 kg of Pumpkin
+1160.67 kg of Beetroot
+0.00 kg of Red Cabbage
+3444.30 kg of Eggplant
+1626.32 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 30: 
+10091.47 kg of Pumpkin
+1137.46 kg of Beetroot
+0.00 kg of Red Cabbage
+3409.86 kg of Eggplant
+3646.07 kg of Cauliflower
+756.49 kg of Broccoli
+
+Period 31: 
+9990.55 kg of Pumpkin
+1114.71 kg of Beetroot
+0.00 kg of Red Cabbage
+3375.76 kg of Eggplant
+3536.68 kg of Cauliflower
+1757.99 kg of Broccoli
+
+Period 32: 
+7056.65 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 33: 
+6986.08 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+1320.75 kg of Eggplant
+445.42 kg of Cauliflower
+2660.44 kg of Broccoli
+
+Period 34: 
+8473.26 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+3710.85 kg of Eggplant
+3849.51 kg of Cauliflower
+2848.36 kg of Broccoli
+
+Period 35: 
+10155.04 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+3673.74 kg of Eggplant
+3734.02 kg of Cauliflower
+3385.10 kg of Broccoli
+
+Period 36: 
+6698.49 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 37: 
+6631.50 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+-0.00 kg of Cauliflower
+590.13 kg of Broccoli
+
+Period 38: 
+6565.19 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+-0.00 kg of Cauliflower
+2743.28 kg of Broccoli
+
+Period 39: 
+6499.53 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+1195.14 kg of Eggplant
+-0.00 kg of Cauliflower
+2688.41 kg of Broccoli
+
+Period 40: 
+1920.54 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 41: 
+1901.33 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 42: 
+1882.32 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 43: 
+1863.50 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 44: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 45: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 46: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 47: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 48: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 49: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 50: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 51: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+Period 52: 
+0.00 kg of Pumpkin
+0.00 kg of Beetroot
+0.00 kg of Red Cabbage
+0.00 kg of Eggplant
+0.00 kg of Cauliflower
+0.00 kg of Broccoli
+
+
+Land Use:
+
+
+Period 1: 
+
+Occupied: 3.35
+
+Available: 6.65
+
+Period 2: 
+
+Occupied: 4.43
+
+Available: 6.65
+
+Period 3: 
+
+Occupied: 4.92
+
+Available: 5.57
+
+Period 4: 
+
+Occupied: 6.65
+
+Available: 5.08
+
+Period 5: 
+
+Occupied: 6.65
+
+Available: 3.35
+
+Period 6: 
+
+Occupied: 7.64
+
+Available: 3.35
+
+Period 7: 
+
+Occupied: 8.25
+
+Available: 2.36
+
+Period 8: 
+
+Occupied: 10.00
+
+Available: 1.75
+
+Period 9: 
+
+Occupied: 8.74
+
+Available: 0.00
+
+Period 10: 
+
+Occupied: 10.00
+
+Available: 1.26
+
+Period 11: 
+
+Occupied: 9.74
+
+Available: 0.00
+
+Period 12: 
+
+Occupied: 9.50
+
+Available: 0.26
+
+Period 13: 
+
+Occupied: 9.64
+
+Available: 0.50
+
+Period 14: 
+
+Occupied: 9.09
+
+Available: 0.36
+
+Period 15: 
+
+Occupied: 9.92
+
+Available: 0.91
+
+Period 16: 
+
+Occupied: 9.80
+
+Available: 0.08
+
+Period 17: 
+
+Occupied: 9.65
+
+Available: 0.20
+
+Period 18: 
+
+Occupied: 9.80
+
+Available: 0.35
+
+Period 19: 
+
+Occupied: 9.26
+
+Available: 0.20
+
+Period 20: 
+
+Occupied: 10.00
+
+Available: 0.74
+
+Period 21: 
+
+Occupied: 9.72
+
+Available: 0.00
+
+Period 22: 
+
+Occupied: 9.94
+
+Available: 0.28
+
+Period 23: 
+
+Occupied: 9.53
+
+Available: 0.06
+
+Period 24: 
+
+Occupied: 8.34
+
+Available: 0.47
+
+Period 25: 
+
+Occupied: 8.34
+
+Available: 1.66
+
+Period 26: 
+
+Occupied: 10.00
+
+Available: 1.66
+
+Period 27: 
+
+Occupied: 9.80
+
+Available: 0.00
+
+Period 28: 
+
+Occupied: 8.21
+
+Available: 0.20
+
+Period 29: 
+
+Occupied: 7.92
+
+Available: 1.79
+
+Period 30: 
+
+Occupied: 10.00
+
+Available: 2.08
+
+Period 31: 
+
+Occupied: 9.65
+
+Available: 0.00
+
+Period 32: 
+
+Occupied: 9.25
+
+Available: 0.35
+
+Period 33: 
+
+Occupied: 8.22
+
+Available: 0.75
+
+Period 34: 
+
+Occupied: 10.00
+
+Available: 1.78
+
+Period 35: 
+
+Occupied: 9.60
+
+Available: 0.00
+
+Period 36: 
+
+Occupied: 9.76
+
+Available: 0.40
+
+Period 37: 
+
+Occupied: 9.56
+
+Available: 0.24
+
+Period 38: 
+
+Occupied: 9.74
+
+Available: 0.44
+
+Period 39: 
+
+Occupied: 9.69
+
+Available: 0.26
+
+Period 40: 
+
+Occupied: 8.37
+
+Available: 0.31
+
+Period 41: 
+
+Occupied: 8.37
+
+Available: 1.63
+
+Period 42: 
+
+Occupied: 9.42
+
+Available: 1.63
+
+Period 43: 
+
+Occupied: 9.42
+
+Available: 0.58
+
+Period 44: 
+
+Occupied: 6.72
+
+Available: 0.58
+
+Period 45: 
+
+Occupied: 6.72
+
+Available: 3.28
+
+Period 46: 
+
+Occupied: 6.72
+
+Available: 3.28
+
+Period 47: 
+
+Occupied: 6.72
+
+Available: 3.28
+
+Period 48: 
+
+Occupied: 3.56
+
+Available: 3.28
+
+Period 49: 
+
+Occupied: 3.56
+
+Available: 6.44
+
+Period 50: 
+
+Occupied: 3.56
+
+Available: 6.44
+
+Period 51: 
+
+Occupied: 3.56
+
+Available: 6.44
+
+Period 52: 
+
+Occupied: 0.00
+
+Available: 6.44
+
+
+Revenue: R6646668.50
+
+PurchaseCost: R5334106.50
+OperatingCost: R275897.68
+LaborCost: R30214.90
+InventoryCost: R10732.17
+
+NET PROFIT: R995717.25
+
+Run time(calculated): 0.15
+Run time(Gurobi): 0.039829 seconds

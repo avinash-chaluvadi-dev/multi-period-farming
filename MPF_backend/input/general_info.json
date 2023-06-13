@@ -1,0 +1,12 @@
+{
+    "time_periods": 52,
+    "total_land_area_available": 10,
+    "produce": [
+        "Pumpkin",
+        "Beetroot",
+        "Red Cabbage",
+        "Eggplant",
+        "Cauliflower",
+        "Broccoli"
+    ]
+}

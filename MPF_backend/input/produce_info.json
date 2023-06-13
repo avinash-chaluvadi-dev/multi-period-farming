@@ -1,0 +1,44 @@
+[
+    {
+        "produce": "Pumpkin",
+        "time_to_harvest": 16,
+        "lead_time_to_purchase": 2,
+        "man_hours_required_per_acre": 20,
+        "fraction_lost_per_period": 0.01
+    },
+    {
+        "produce": "Beetroot",
+        "time_to_harvest": 8,
+        "lead_time_to_purchase": 1,
+        "man_hours_required_per_acre": 47.45,
+        "fraction_lost_per_period": 0.02
+    },
+    {
+        "produce": "Red Cabbage",
+        "time_to_harvest": 10,
+        "lead_time_to_purchase": 1,
+        "man_hours_required_per_acre": 117,
+        "fraction_lost_per_period": 0.05
+    },
+    {
+        "produce": "Eggplant",
+        "time_to_harvest": 10,
+        "lead_time_to_purchase": 2,
+        "man_hours_required_per_acre": 82.5,
+        "fraction_lost_per_period": 0.01
+    },
+    {
+        "produce": "Cauliflower",
+        "time_to_harvest": 10,
+        "lead_time_to_purchase": 2,
+        "man_hours_required_per_acre": 25,
+        "fraction_lost_per_period": 0.03
+    },
+    {
+        "produce": "Broccoli",
+        "time_to_harvest": 18,
+        "lead_time_to_purchase": 3,
+        "man_hours_required_per_acre": 50,
+        "fraction_lost_per_period": 0.02
+    }
+]
