@@ -95,7 +95,7 @@ async def optimize(db: Session = Depends(get_db)):
     for x in produce:
         fractionlost[x] = ProduceSheet.loc[i, "fraction_lost_per_period"]
         i = i + 1
-    
+
     # PeriodSheet Variables
     invholdingcost = {}
     i = 0

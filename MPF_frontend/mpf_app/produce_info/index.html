@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="produce-info">
+        <p class="produce-info-heading">Produce Info</p>
+        <div class="mpf-navigation-bar">
+          <div class="mpf-button-wrapper">
+            <div class="number-square">
+              <span class="number">1</span>
+            </div>
+            <button class="button">General Info</button>
+          </div>
+          <span class="separator"></span>
+          <div class="mpf-button-wrapper">
+            <div class="number-square">
+              <span class="number">2</span>
+            </div>
+            <button class="button">Produce Info</button>
+          </div>
+          <span class="separator"></span>
+          <div class="mpf-button-wrapper">
+            <div class="number-square">
+              <span class="number">3</span>
+            </div>
+            <button class="button">Produce Period Info</button>
+          </div>
+          <span class="separator"></span>
+          <div class="mpf-button-wrapper">
+            <div class="number-square">
+              <span class="number">4</span>
+            </div>
+            <button class="button">Period Info</button>
+          </div>
+        </div>
+        <div class="produce-info-input-container">
+          <div class="produce-info-details">
+            <p>Enter Produce Details</p>
+          </div>
+          <div class="produce-info-input">
+            <div class="produce-info-input-wrapper">
+              <label for="produce">Produce</label>
+              <input
+                type="text"
+                id="produce"
+                class="input-field"
+                placeholder="Crop name"
+              />
+            </div>
+            <div class="produce-info-input-wrapper">
+              <label for="time_to_harvest"
+                >Time to Harvest (Periods)</label
+              >
+              <input
+                type="text"
+                id="time_to_harvest"
+                class="input-field"
+                placeholder="Area in acres"
+              />
+            </div>
+            <div class="produce-info-input-wrapper">
+              <label for="lead_time_to_purchase">Lead Time to Purchase (Periods)</label>
+              <input
+                type="text"
+                id="lead_time_to_purchase"
+                class="input-field"
+                placeholder="Time for the entire purchase"
+              />
+            </div>
+            <div class="produce-info-input-wrapper">
+              <label for="man_hours_required">Man Hours Required per Acre</label>
+              <input
+                type="text"
+                id="man_hours_required"
+                class="input-field"
+                placeholder="Total hours required"
+              />
+            </div>
+            <div class="produce-info-input-wrapper">
+              <label for="fraction_lost">Fraction Lost per Time Period</label>
+              <input
+                type="text"
+                id="fraction_lost"
+                class="input-field"
+                placeholder="Fraction lost per period"
+              />
+            </div>
+          </div>
+          <div class="produce-info-button-container">
+            <button class="add-produce-button">Add Produce Info</button>
+            <button class="next-produce-info-button">Next (Produce Period Info)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
