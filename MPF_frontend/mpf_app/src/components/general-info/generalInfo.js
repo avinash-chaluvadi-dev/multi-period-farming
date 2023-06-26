@@ -1,28 +1,32 @@
 import React, { useState } from "react";
-import "./general_info.css";
-import addProduce from "./addProduce";
+import "./generalInfo.css";
+import ProduceInfo from "../produce-info/produceInfo";
 
 const GeneralInfo = () => {
-  const[totalLand, setTotalLand] = useState("")
-  const[timePeriod, setTimePeriod] = useState(0)
+  const [step, setStep] = useState(1);
+  const [totalLand, setTotalLand] = useState("");
+  const [timePeriod, setTimePeriod] = useState(0);
   const [produceItems, setProduceItems] = useState([""]);
+  const [showComponent, setShowComponent] = useState(false);
+  const [generalResponse, setgeneralResponse] = useState({});
 
   const handleAddProduce = () => {
-    setProduceItems([...produceItems, ]);
+    setProduceItems([...produceItems, ""]);
+    console.log(produceItems);
   };
 
-  const handleChangeProduce = (value, index) =>{
+  const handleChangeProduce = (value, index) => {
     const newFormValues = [...produceItems];
     newFormValues[index] = value;
     setProduceItems(newFormValues);
-  }
+  };
 
-  const handleNextProduceInfo = async() =>{
+  const handleNextProduceInfo = async () => {
     const data = {
-      "produce": produceItems,
-      "time_periods": timePeriod,
-      "total_land_area_available": totalLand
-    }
+      produce: produceItems,
+      time_periods: timePeriod,
+      total_land_area_available: totalLand,
+    };
     try {
       const response = await fetch("http://127.0.0.1:8000/general_info", {
         method: "POST",
@@ -31,24 +35,33 @@ const GeneralInfo = () => {
         },
         body: JSON.stringify(data),
       });
-  
+
       const result = await response.json();
+      setgeneralResponse(result)
       console.log("Success:", result);
     } catch (error) {
       console.error("Error:", error);
     }
-  }
+  };
 
+  const renderProduceInfo = () => {
+    setShowComponent(true);
+  };
+  
   return (
-    <div className="background">
+    <>
+    {showComponent ? (
+      <ProduceInfo generalResponse={generalResponse}/>
+    ) : (
+    <div className="general-info-background">
       <div className="general-info">
         <p className="general-info-heading">General Info</p>
         <div className="mpf-navigation-bar">
           <div className="mpf-button-wrapper">
-            <div className="number-square">
-              <span className="number">1</span>
+            <div className="number-square general-button-selected">
+              <span className="number general-button-selected-number">1</span>
             </div>
-            <button className="button">General Info</button>
+            <button className="button general-info-step-name">General Info</button>
           </div>
           <span className="separator"></span>
           <div className="mpf-button-wrapper">
@@ -72,6 +85,7 @@ const GeneralInfo = () => {
             <button className="button">Period Info</button>
           </div>
         </div>
+        {!showComponent && (
         <div className="general-info-input-container">
           <div className="general-info-details">
             <p>Enter General Details</p>
@@ -86,8 +100,7 @@ const GeneralInfo = () => {
                 id="area_available"
                 className="input-field"
                 placeholder="Area in acres"
-                onChange={(event)=>setTotalLand(event.target.value)}
-
+                onChange={(event) => setTotalLand(event.target.value)}
               />
             </div>
             <div className="general-info-input-wrapper">
@@ -97,37 +110,55 @@ const GeneralInfo = () => {
                 id="time_period"
                 className="input-field"
                 placeholder="Time for the entire planning"
-                onChange={(event)=>setTimePeriod(event.target.value)}
+                onChange={(event) => setTimePeriod(event.target.value)}
               />
             </div>
           </div>
-          {produceItems.map((item, index) =>(
-            <div className="general-info-input">
-            <div className="general-info-input-wrapper">
-              <label htmlFor="produce">Produce</label>
-              <input
-                type="text"
-                id="produce"
-                className="input-field"
-                placeholder="Crop name"
-                onChange={(event)=>handleChangeProduce(event.target.value, index)}
-              />
-            </div>
+          <div className="general-info-produce">
+            {produceItems.map((_item, index) => (
+              <div className="general-info-input-wrapper">
+                <label htmlFor="produce">Produce</label>
+                <input
+                  type="text"
+                  id="produce"
+                  className="input-field"
+                  placeholder="Crop name"
+                  onChange={(event) =>
+                    handleChangeProduce(event.target.value, index)
+                  }
+                />
+              </div>
+            ))}
           </div>
-  ))}
           <div className="general-info-button-container">
-            <button className="add-produce-button" onClick={handleAddProduce}>
-              Add Produce
+            <button className="add-general-info-button" onClick={handleAddProduce}>
+              Add
             </button>
-            <addProduce produceItems={produceItems} />
-            <button className="next-produce-info-button" onClick={handleNextProduceInfo}>
+            <button
+              className="general-info-save-button"
+              onClick={handleNextProduceInfo}
+            >
+              Save
+            </button>
+          </div>
+          <div>
+            <button
+              className="next-produce-info-button"
+              onClick={renderProduceInfo}
+            >
               Next (Produce Info)
             </button>
+            {/* {showComponent && < ProducePeriodInfo/>} */}
           </div>
         </div>
+        )}
       </div>
     </div>
+    )}
+  </>
+      
   );
 };
+
 
 export default GeneralInfo;

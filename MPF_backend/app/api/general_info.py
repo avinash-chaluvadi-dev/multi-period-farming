@@ -1,5 +1,5 @@
 from typing import List
-
+import copy
 import fastapi
 from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
@@ -37,6 +37,7 @@ async def read_general_info(
 async def create_new_general_info(
     general_info: PrimaryKeyBase, db: Session = Depends(get_db)
 ):
+    general_info_response = {}
     parent_item = PrimaryKey(
         time_periods=general_info.time_periods,
         total_land_area_available=general_info.total_land_area_available,
@@ -47,7 +48,10 @@ async def create_new_general_info(
     create_general_info(
         db=db, general_info=general_info.produce, primary_key_id=parent_item.id
     )
-    return general_info
+    general_info_response["id"] = parent_item.id
+    general_info_response["produce"] = general_info.produce
+    general_info_response["time_periods"] = general_info.time_periods
+    return general_info_response
 
 
 @router.get(
@@ -57,6 +61,7 @@ async def create_new_general_info(
 )
 async def read_single_general_info(id: int, db: Session = Depends(get_db)):
     general_info_item = get_single_general_info(db=db, id=id)
+    print("------", general_info_item)
     if general_info_item is None:
         raise HTTPException(status_code=404, detail="General Info record not found")
     return general_info_item

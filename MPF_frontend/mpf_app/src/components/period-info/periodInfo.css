@@ -1,0 +1,159 @@
+body {
+  background-image: url("../../assets/5105270.png");
+  background-size: cover;
+}
+
+.period-background {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.period-info {
+  font-family: "Lato";
+  font-size: 14px;
+}
+
+.period-info-heading {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 24px;
+  padding: 15px 15px;
+  color: #333333;
+}
+
+.period-navigation-bar {
+  display: flex;
+  font-family: "Lato";
+  justify-content: space-between;
+  padding: 8px 250px 0;
+  width: 900px;
+  margin-top: 2px;
+}
+.period-info-input-container {
+  /* min-width: 1200px; */
+  width: fit-content;
+  /* width: 100%; */
+  overflow-x: auto;
+  min-height: 500px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  /* opacity: 0.799999988079071; */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  );
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+
+  margin-top: 10px;
+  /* margin-left: 50px; */
+  /* padding: 20px; */
+  margin-right: 22px;
+}
+.period-info-details {
+  display: flex;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  font-size: 18px;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+.period-info-input {
+  display: flex;
+  display: flex;
+  font-size: 20px;
+  color: #333;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 550;
+  padding-bottom: 30px;
+}
+.period-table-container {
+  overflow: auto;
+  max-height: 351px;
+}
+.period-table {
+  /* border: none; */
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  min-width: 1080px;
+}
+
+.period-head {
+  color: #666;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: 1.5px solid #CCC;
+
+  background-color: #eeeeee;
+}
+
+.period-head:nth-child(1) {
+  width: 100px;
+}
+.period-head:nth-child(2) {
+  width: 200px;
+}
+.period-head:nth-child(3) {
+  width: 150px;
+}
+.period-head:nth-child(4) {
+  width: 145px
+}
+.period-head:nth-child(5) {
+  width: 160px
+}
+.period-head:nth-child(6) {
+  width: 180px
+}
+.period-head:nth-child(7) {
+  width: 180px
+}
+
+.period-head:nth-child(8) {
+  width: 160px
+}
+
+.period-odd-row {
+  background: #f7f7f7;
+}
+
+.period-info-button-container {
+  display: flex;
+  /* align-items: center; */
+}
+.optimize-button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #566418;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 1200px;
+  border-radius: 12px;
+  margin-left: 115px;
+  height: 30px;
+}

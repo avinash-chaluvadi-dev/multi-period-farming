@@ -9,8 +9,10 @@ class PrimaryKeyBase(BaseModel):
     total_land_area_available: int
 
 
-class GeneralInfoCreate(PrimaryKeyBase):
-    ...
+class GeneralInfoCreate(BaseModel):
+    id: int
+    produce: List[str]
+    time_periods: int
 
 
 class GeneralInfo(BaseModel):

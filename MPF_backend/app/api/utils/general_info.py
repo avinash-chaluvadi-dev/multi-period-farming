@@ -5,7 +5,7 @@ from app.schemas.general_info import GeneralInfoCreate
 
 
 def get_single_general_info(db: Session, id: int):
-    return db.query(GeneralInfo).filter(GeneralInfo.id == id).first()
+    return db.query(GeneralInfo).filter(GeneralInfo.primary_key_id == id).all()
 
 
 def get_general_info(db: Session, skip: int = 0, limit: int = 100):
