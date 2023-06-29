@@ -248,3 +248,37 @@ body {
   height: 30px;
   /* background: #AAB189; */
 }
+
+.data-saved-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+  width: 240px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.70);
+  margin-left: -70px;
+  margin-top: -35px;
+}
+
+.data-save-tick {
+  display: flex;
+  margin-left: 5px;
+}
+
+.data-save-text {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Lato";
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+
+.data-close-tick {
+  cursor: pointer;
+  margin-left: 32px;
+  margin-bottom: 23px;
+}
