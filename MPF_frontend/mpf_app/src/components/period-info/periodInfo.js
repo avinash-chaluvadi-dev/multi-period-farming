@@ -28,7 +28,7 @@ const PeriodInfo = ({ generalResponse }) => {
       });
 
       const result = await response.json();
-      setProduceInfoStatus(true);
+      // setProduceInfoStatus(true);
     } catch (error) {
       console.error("Error:", error);
     }

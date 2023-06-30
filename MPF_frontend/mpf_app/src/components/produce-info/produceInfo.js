@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import ProducePeriodInfo from "../produce-period-info/producePeriodInfo";
 import "./produceInfo.css";
+import dataSaveIcon from "../../assets/data-save.svg";
+import dataCloseIcon from "../../assets/file-close.svg";
 
 const ProduceInfo = ({ generalResponse }) => {
   const [infoRecords, setInfoRecords] = useState([]);
   const [produceItems, setProduceItems] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
+  const [dataSavedState, setDataSavedState] = useState(false);
   const [produceInfoStatus, setProduceInfoStatus] = useState(false);
 
   const generalInfoRecords = async (id) => {
@@ -54,6 +57,7 @@ const ProduceInfo = ({ generalResponse }) => {
       });
 
       const result = await response.json();
+      setDataSavedState(true);
       setProduceInfoStatus(true);
     } catch (error) {
       console.error("Error:", error);
@@ -194,6 +198,15 @@ const ProduceInfo = ({ generalResponse }) => {
                   </tbody>
                 </table>
               </div>
+              {dataSavedState && (<div className="produce-data-saved-container">
+                    <div className="data-save-tick">
+                      <img src={dataSaveIcon} alt="mySvgImage" />
+                    </div>
+                    <p className="data-save-text">Data saved successfully</p>
+                    <div className="data-close-tick">
+                      <img src={dataCloseIcon} alt="mySvgImage" onClick={()=>{setDataSavedState(false)}}/>
+                    </div>
+                  </div>)}
               <div className="produce-period-info-button-container">
                 <button
                   className="produce-save-button"
