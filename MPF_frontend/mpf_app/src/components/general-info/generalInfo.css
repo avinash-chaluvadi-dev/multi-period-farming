@@ -258,8 +258,8 @@ body {
   height: 45px;
   flex-shrink: 0;
   border-radius: 12px;
-  color: #FFF;
-  background: rgba(0, 0, 0, 0.70);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
   margin-left: -70px;
   margin-top: -35px;
 }

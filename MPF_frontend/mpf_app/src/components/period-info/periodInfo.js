@@ -218,6 +218,7 @@ const PeriodInfo = ({ generalResponse }) => {
             </div>
           </div>
           <div className="period-info-button-container">
+          <button className="optimize-button">Save</button>
             <button className="optimize-button">Optimize</button>
           </div>
         </div>
