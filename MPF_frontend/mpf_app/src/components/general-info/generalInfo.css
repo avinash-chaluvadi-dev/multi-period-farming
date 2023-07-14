@@ -137,18 +137,38 @@ body {
   text-align: left;
   color: #000;
   font-size: 18px;
-  font-family: Bitter;
+  font-family: "Bitter";
   font-weight: 550;
   padding-left: 2px;
   margin-left: 20px;
   padding-bottom: 15px;
 }
 
+.star {
+  color: #f00;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
 .general-info-constants {
   display: flex;
   color: #333;
   font-size: 14px;
-  font-family: Lato;
+  font-family: "Lato";
+  font-weight: 550;
+  line-height: 22px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+}
+
+.instance-name {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-size: 14px;
+  font-family: "Lato";
   font-weight: 550;
   line-height: 22px;
   margin-bottom: 20px;
@@ -171,10 +191,42 @@ body {
   font-weight: 550;
   line-height: 22px;
   margin-left: 120px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.general-info-produce-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+.general-info-produce-wrapper input {
+  display: flex;
+  width: 240px;
+  padding: 8px 30px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
 .general-info-input-wrapper input {
+  display: flex;
+
+  width: 240px;
+  padding: 8px 30px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.instance-name input {
   display: flex;
   /* flex-direction: column; */
   width: 240px;
@@ -182,6 +234,10 @@ body {
   margin-top: 5px;
   margin-bottom: 3px;
   margin-right: 20px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
 .input-field::placeholder {
@@ -193,12 +249,15 @@ body {
 
 .general-info-button-container {
   display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
 .add-general-info-button {
-  cursor: pointer;
   display: flex;
+  cursor: pointer;
+  /* display: flex; */
+  white-space: nowrap;
   align-items: center;
   justify-content: center;
   background: #ffffff;
@@ -207,11 +266,17 @@ body {
   font-size: 15px;
   font-weight: 600;
   color: #566418;
-  width: 390px;
-  /* margin-top: 20px; */
+  width: 303px;
+  height: 35px;
   margin-left: 120px;
+  margin-bottom: 20px;
   margin-right: 25px;
-  height: 30px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
 .general-info-save-button {
@@ -223,14 +288,14 @@ body {
   font-size: 15px;
   font-weight: 600;
   color: #566418;
-  width: 390px;
+  width: 850px;
   border-radius: 12px; /* Adjust the roundness of the edges */
-  margin-left: 45px;
+  margin-left: 120px;
   height: 30px;
   background: #ffffff;
   border: 2px solid #566418;
   /* border-radius: 12px; */
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .next-produce-info-button {
@@ -261,7 +326,7 @@ body {
   color: #fff;
   background: rgba(0, 0, 0, 0.7);
   margin-left: -70px;
-  margin-top: -35px;
+  margin-top: -45px;
 }
 
 .data-save-tick {

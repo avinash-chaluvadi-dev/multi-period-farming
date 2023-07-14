@@ -95,10 +95,22 @@ const GeneralInfo = () => {
                 <div className="general-info-details">
                   <p>Enter General Details</p>
                 </div>
+                <div className="instance-name">
+                  <label htmlFor="instance_name">
+                    Instance Name<span className="star">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="instance_name"
+                    className="input-field"
+                    placeholder="Enter instance name"
+                  />
+                </div>
                 <div className="general-info-constants">
                   <div className="general-info-input-wrapper">
                     <label htmlFor="area_available">
                       Total Land Area Available (in acres)
+                      <span className="star">*</span>
                     </label>
                     <input
                       type="text"
@@ -109,7 +121,9 @@ const GeneralInfo = () => {
                     />
                   </div>
                   <div className="general-info-input-wrapper">
-                    <label htmlFor="time_period">Time Period</label>
+                    <label htmlFor="time_period">
+                      Time Period<span className="star">*</span>
+                    </label>
                     <input
                       type="text"
                       id="time_period"
@@ -122,7 +136,9 @@ const GeneralInfo = () => {
                 <div className="general-info-produce">
                   {produceItems.map((_item, index) => (
                     <div className="general-info-input-wrapper">
-                      <label htmlFor="produce">Produce</label>
+                      <label htmlFor="produce">
+                        Produce<span className="star">*</span>
+                      </label>
                       <input
                         type="text"
                         id="produce"
@@ -140,7 +156,7 @@ const GeneralInfo = () => {
                     className="add-general-info-button"
                     onClick={handleAddProduce}
                   >
-                    Add
+                    Add Produce
                   </button>
                   <button
                     className="general-info-save-button"
@@ -149,18 +165,23 @@ const GeneralInfo = () => {
                     Save
                   </button>
 
-                  {dataSavedState && (<div className="data-saved-container">
-                    <div className="data-save-tick">
-                      <img src={dataSaveIcon} alt="mySvgImage" />
+                  {dataSavedState && (
+                    <div className="data-saved-container">
+                      <div className="data-save-tick">
+                        <img src={dataSaveIcon} alt="mySvgImage" />
+                      </div>
+                      <p className="data-save-text">Data saved successfully</p>
+                      <div className="data-close-tick">
+                        <img
+                          src={dataCloseIcon}
+                          alt="mySvgImage"
+                          onClick={() => {
+                            setDataSavedState(false);
+                          }}
+                        />
+                      </div>
                     </div>
-                    <p className="data-save-text">Data saved successfully</p>
-                    <div className="data-close-tick">
-                      <img src={dataCloseIcon} alt="mySvgImage" onClick={()=>{setDataSavedState(false)}}/>
-                    </div>
-                  </div>)}
-                </div>
-
-                <div>
+                  )}
                   <button
                     className="next-produce-info-button"
                     onClick={renderProduceInfo}
