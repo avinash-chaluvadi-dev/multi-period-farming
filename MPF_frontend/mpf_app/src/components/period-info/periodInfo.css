@@ -46,12 +46,7 @@ body {
   flex-shrink: 0;
   border-radius: 16px;
   /* opacity: 0.799999988079071; */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.6
-  );
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
 
   margin-top: 10px;
@@ -75,11 +70,10 @@ body {
 
 .period-info-input {
   display: flex;
-  display: flex;
   font-size: 20px;
   color: #333;
   font-size: 14px;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 550;
   padding-bottom: 30px;
 }
@@ -103,7 +97,7 @@ body {
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
-  border: 1.5px solid #CCC;
+  border: 1.5px solid #ccc;
 
   background-color: #eeeeee;
 }
@@ -118,20 +112,20 @@ body {
   width: 150px;
 }
 .period-head:nth-child(4) {
-  width: 145px
+  width: 145px;
 }
 .period-head:nth-child(5) {
-  width: 160px
+  width: 160px;
 }
 .period-head:nth-child(6) {
-  width: 180px
+  width: 180px;
 }
 .period-head:nth-child(7) {
-  width: 180px
+  width: 180px;
 }
 
 .period-head:nth-child(8) {
-  width: 160px
+  width: 160px;
 }
 
 .period-odd-row {

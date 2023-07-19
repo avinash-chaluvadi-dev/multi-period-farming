@@ -6,6 +6,7 @@ from pydantic import BaseModel
 class PrimaryKeyBase(BaseModel):
     produce: List[str]
     time_periods: int
+    instance_name: str
     total_land_area_available: int
 
 

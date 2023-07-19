@@ -81,17 +81,21 @@ const PeriodInfo = ({ generalResponse }) => {
             <div className="period-table-container">
               <table className="period-table">
                 <thead>
-                  <th className="period-head">Time Period</th>
-                  <th className="period-head">
-                    Inventory Holding Cost (South African Rand per KG)
-                  </th>
-                  <th className="period-head">Water Available (in litres)</th>
-                  <th className="period-head">Water Cost / Litre</th>
-                  <th className="period-head">Available Man Hours</th>
-                  <th className="period-head">Labour Cost/Man Hour</th>
-                  <th className="period-head">Fertilizer Cost / Kg</th>
-                  <th className="period-head">Energy Cost / Unit</th>
-                  <th className="period-head">Fertilizer Required/acre (kg)</th>
+                  <tr>
+                    <th className="period-head">Time Period</th>
+                    <th className="period-head">
+                      Inventory Holding Cost (South African Rand per KG)
+                    </th>
+                    <th className="period-head">Water Available (in litres)</th>
+                    <th className="period-head">Water Cost / Litre</th>
+                    <th className="period-head">Available Man Hours</th>
+                    <th className="period-head">Labour Cost/Man Hour</th>
+                    <th className="period-head">Fertilizer Cost / Kg</th>
+                    <th className="period-head">Energy Cost / Unit</th>
+                    <th className="period-head">
+                      Fertilizer Required/acre (kg)
+                    </th>
+                  </tr>
                 </thead>
                 <tbody>
                   {periodArray?.map((item, index) => (
@@ -218,7 +222,7 @@ const PeriodInfo = ({ generalResponse }) => {
             </div>
           </div>
           <div className="period-info-button-container">
-          <button className="optimize-button">Save</button>
+            <button className="optimize-button">Save</button>
             <button className="optimize-button">Optimize</button>
           </div>
         </div>

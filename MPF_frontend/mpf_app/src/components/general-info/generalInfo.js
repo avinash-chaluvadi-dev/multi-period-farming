@@ -1,16 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./generalInfo.css";
 import dataSaveIcon from "../../assets/data-save.svg";
 import dataCloseIcon from "../../assets/file-close.svg";
 import ProduceInfo from "../produce-info/produceInfo";
 
-const GeneralInfo = () => {
+const GeneralInfo = (props) => {
+  let responseObject = {};
+  const { instance_name } = props;
+
   const [totalLand, setTotalLand] = useState("");
-  const [timePeriod, setTimePeriod] = useState(0);
+  const [primaryKey, setPrimaryKey] = useState(0);
+  const [timePeriod, setTimePeriod] = useState("");
+  const [instanceName, setInstanceName] = useState("");
   const [produceItems, setProduceItems] = useState([""]);
   const [showComponent, setShowComponent] = useState(false);
   const [generalResponse, setgeneralResponse] = useState({});
   const [dataSavedState, setDataSavedState] = useState(false);
+
+  useEffect(() => {
+    if (instance_name) {
+      setInstanceName(instance_name);
+      let url = new URL("http://127.0.0.1:8000/instance_history/primary_key/");
+      url.searchParams.append("instance_name", instance_name);
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          setPrimaryKey(data.id);
+          responseObject.id = data.id;
+          setTimePeriod(data.time_periods);
+          responseObject.time_periods = data.time_periods;
+          setTotalLand(data.total_land_area_available);
+          return fetch(`http://127.0.0.1:8000/general_info${data.id}`);
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          let produceList = data.map((item) => {
+            return { produce: item.produce };
+          });
+          responseObject.produce = produceList;
+          setgeneralResponse(responseObject);
+          setProduceItems(produceList);
+        })
+        .catch((error) => console.error("Error:", error));
+    }
+  }, [responseObject.id]);
 
   const handleAddProduce = () => {
     setProduceItems([...produceItems, ""]);
@@ -26,8 +59,14 @@ const GeneralInfo = () => {
     const data = {
       produce: produceItems,
       time_periods: timePeriod,
+      instance_name: instanceName,
       total_land_area_available: totalLand,
     };
+    let produceList = produceItems.map((item) => {
+      return { produce: item };
+    });
+    setgeneralResponse(produceList);
+
     try {
       const response = await fetch("http://127.0.0.1:8000/general_info", {
         method: "POST",
@@ -39,7 +78,7 @@ const GeneralInfo = () => {
 
       const result = await response.json();
       setDataSavedState(true);
-      setgeneralResponse(result);
+      // setgeneralResponse(result);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -51,9 +90,13 @@ const GeneralInfo = () => {
 
   return (
     <>
-      {showComponent ? (
-        <ProduceInfo generalResponse={generalResponse} />
-      ) : (
+      {showComponent && (
+        <ProduceInfo
+          generalResponse={generalResponse}
+          primaryKey={primaryKey}
+        />
+      )}
+      {!showComponent && (
         <div className="general-info-background">
           <div className="general-info">
             <p className="general-info-heading">General Info</p>
@@ -104,6 +147,8 @@ const GeneralInfo = () => {
                     id="instance_name"
                     className="input-field"
                     placeholder="Enter instance name"
+                    value={instance_name}
+                    onChange={(event) => setInstanceName(event.target.value)}
                   />
                 </div>
                 <div className="general-info-constants">
@@ -117,6 +162,7 @@ const GeneralInfo = () => {
                       id="area_available"
                       className="input-field"
                       placeholder="Area in acres"
+                      value={totalLand}
                       onChange={(event) => setTotalLand(event.target.value)}
                     />
                   </div>
@@ -129,6 +175,7 @@ const GeneralInfo = () => {
                       id="time_period"
                       className="input-field"
                       placeholder="Time for the entire planning"
+                      value={timePeriod}
                       onChange={(event) => setTimePeriod(event.target.value)}
                     />
                   </div>
@@ -144,6 +191,7 @@ const GeneralInfo = () => {
                         id="produce"
                         className="input-field"
                         placeholder="Crop name"
+                        defaultValue={_item.produce}
                         onChange={(event) =>
                           handleChangeProduce(event.target.value, index)
                         }

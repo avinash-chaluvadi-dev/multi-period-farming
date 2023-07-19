@@ -4,7 +4,10 @@ import "./produceInfo.css";
 import dataSaveIcon from "../../assets/data-save.svg";
 import dataCloseIcon from "../../assets/file-close.svg";
 
-const ProduceInfo = ({ generalResponse }) => {
+const ProduceInfo = (props) => {
+  const { primaryKey } = props;
+  const { generalResponse } = props;
+
   const [infoRecords, setInfoRecords] = useState([]);
   const [produceItems, setProduceItems] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
@@ -22,14 +25,19 @@ const ProduceInfo = ({ generalResponse }) => {
   };
 
   useEffect(() => {
-    if (generalResponse.id) {
-      (async () => {
-        const result = await generalInfoRecords(generalResponse.id);
-        setInfoRecords(result);
-      })();
+    if (primaryKey) {
+      try {
+        fetch(`http://localhost:8000/produce_info/${primaryKey}`)
+          .then((response) => response.json())
+          .then((data) => {
+            setInfoRecords(data);
+          });
+      } catch (error) {
+        console.log("Error:", error);
+      }
+    } else {
+      setInfoRecords(generalResponse);
     }
-
-    return () => {};
   }, [generalResponse.id]);
 
   const renderProducePeriodInfo = () => {
@@ -46,7 +54,6 @@ const ProduceInfo = ({ generalResponse }) => {
     produceItems.forEach((item, index) => {
       item.produce = generalResponse.produce[index];
     });
-    console.log(produceItems);
     try {
       const response = await fetch("http://127.0.0.1:8000/produce_info", {
         method: "POST",
@@ -113,20 +120,22 @@ const ProduceInfo = ({ generalResponse }) => {
               <div className="produce-info-input">
                 <table className="produce-table">
                   <thead>
-                    <th className="produce-head">Produce</th>
-                    <th className="produce-head">Time to harvest(Periods)</th>
-                    <th className="produce-head">
-                      Lead time to purchase(Periods)
-                    </th>
-                    <th className="produce-head">
-                      Man Hours required per acre
-                    </th>
-                    <th className="produce-head">
-                      Fraction Lost per time period
-                    </th>
+                    <tr>
+                      <th className="produce-head">Produce</th>
+                      <th className="produce-head">Time to harvest(Periods)</th>
+                      <th className="produce-head">
+                        Lead time to purchase(Periods)
+                      </th>
+                      <th className="produce-head">
+                        Man Hours required per acre
+                      </th>
+                      <th className="produce-head">
+                        Fraction Lost per time period
+                      </th>
+                    </tr>
                   </thead>
                   <tbody>
-                    {infoRecords?.map((item, index) => (
+                    {infoRecords.map((item, index) => (
                       <tr
                         className={index % 2 === 0 ? "even-row" : "odd-row"}
                         key={index}
@@ -145,6 +154,7 @@ const ProduceInfo = ({ generalResponse }) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
+                            value={item.time_to_harvest}
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -158,6 +168,7 @@ const ProduceInfo = ({ generalResponse }) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
+                            value={item.lead_time_to_purchase}
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -171,6 +182,7 @@ const ProduceInfo = ({ generalResponse }) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
+                            value={item.man_hours_required_per_acre}
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -184,6 +196,7 @@ const ProduceInfo = ({ generalResponse }) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
+                            value={item.fraction_lost_per_period}
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -198,15 +211,23 @@ const ProduceInfo = ({ generalResponse }) => {
                   </tbody>
                 </table>
               </div>
-              {dataSavedState && (<div className="produce-data-saved-container">
-                    <div className="data-save-tick">
-                      <img src={dataSaveIcon} alt="mySvgImage" />
-                    </div>
-                    <p className="data-save-text">Data saved successfully</p>
-                    <div className="data-close-tick">
-                      <img src={dataCloseIcon} alt="mySvgImage" onClick={()=>{setDataSavedState(false)}}/>
-                    </div>
-                  </div>)}
+              {dataSavedState && (
+                <div className="produce-data-saved-container">
+                  <div className="data-save-tick">
+                    <img src={dataSaveIcon} alt="mySvgImage" />
+                  </div>
+                  <p className="data-save-text">Data saved successfully</p>
+                  <div className="data-close-tick">
+                    <img
+                      src={dataCloseIcon}
+                      alt="mySvgImage"
+                      onClick={() => {
+                        setDataSavedState(false);
+                      }}
+                    />
+                  </div>
+                </div>
+              )}
               <div className="produce-period-info-button-container">
                 <button
                   className="produce-save-button"

@@ -9,6 +9,7 @@ class PrimaryKey(Timestamp, Base):
     __tablename__ = "primary_keys"
 
     id = Column(Integer, primary_key=True, index=True)
+    instance_name = Column(String)
     time_periods = Column(Integer)
     total_land_area_available = Column(Integer)
 

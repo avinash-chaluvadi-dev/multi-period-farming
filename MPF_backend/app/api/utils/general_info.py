@@ -1,7 +1,11 @@
 from sqlalchemy.orm import Session
 
-from app.db.models.general_info import GeneralInfo
+from app.db.models.general_info import GeneralInfo, PrimaryKey
 from app.schemas.general_info import GeneralInfoCreate
+
+
+def get_instance_history(db: Session):
+    return db.query(PrimaryKey).all()
 
 
 def get_single_general_info(db: Session, id: int):

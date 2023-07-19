@@ -5,7 +5,7 @@ from app.schemas.produce_info import ProduceInfoCreate
 
 
 def get_single_produce_info(db: Session, id: int):
-    return db.query(ProduceInfo).filter(ProduceInfo.id == id).first()
+    return db.query(ProduceInfo).filter(ProduceInfo.primary_key_id == id).all()
 
 
 def get_produce_info(db: Session, skip: int = 0, limit: int = 100):

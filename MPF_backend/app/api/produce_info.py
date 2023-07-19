@@ -49,7 +49,7 @@ async def create_new_produce_info(
 
 @router.get(
     "/produce_info/{id}",
-    response_model=ProduceInfo,
+    response_model=List[ProduceInfo],
     tags=["Multi Period Farming Produce Info"],
 )
 async def read_single_produce_info(id: int, db: Session = Depends(get_db)):

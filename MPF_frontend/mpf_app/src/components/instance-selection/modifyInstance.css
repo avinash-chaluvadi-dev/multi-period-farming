@@ -1,0 +1,116 @@
+.modify-instance-background {
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.modify-instance-heading {
+  display: flex;
+  position: absolute;
+  width: 230px;
+  height: 29px;
+  left: 80px;
+  top: 20px;
+  font-family: "Bitter";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.modify-instance-container {
+  display: flex;
+  overflow-y: auto;
+  width: 1000px;
+  height: 550px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  opacity: 0.699999988079071;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  margin-top: 150px;
+  margin-right: 40px;
+}
+
+.modify-instance-history {
+  /* display: flex; */
+  color: #000;
+  font-family: "Bitter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  padding-left: 2px;
+  margin-left: 45px;
+  margin-top: 25px;
+  /* width: 200px; */
+}
+
+.modify-instance-table-container {
+  /* overflow-y: auto; */
+  max-height: 351px;
+}
+
+.modify-instance-table {
+  border-collapse: collapse;
+  margin-top: 100px;
+  min-width: 100px;
+  justify-content: center;
+  margin-left: 5px;
+  /* margin-right: 90px; */
+}
+
+.modify-instance-head {
+  /* display: flex; */
+  color: #666;
+  height: 40px;
+  font-family: "Lato";
+  font-weight: 900;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: 1.5px solid #ccc;
+  background-color: #eeeeee;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.modify-instance-table-input {
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 15px;
+  font-family: "Lato";
+  line-height: 22px;
+  text-align: center;
+  width: 150px;
+  font-weight: 550;
+}
+
+.view-instance {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #556317;
+  font-family: "Lato";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  width: 150px;
+}
+
+.view-instance img {
+  margin-top: 2px;
+  margin-left: 4px;
+}

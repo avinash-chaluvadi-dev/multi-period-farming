@@ -1,10 +1,9 @@
-from typing import List
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api import (
     general_info,
+    instance_history,
     optimize,
     period_info,
     produce_info,
@@ -45,6 +44,7 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
 )
+app.include_router(instance_history.router)
 app.include_router(general_info.router)
 app.include_router(produce_info.router)
 app.include_router(produce_period_info.router)

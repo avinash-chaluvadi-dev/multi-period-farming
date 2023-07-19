@@ -1,13 +1,8 @@
-import './App.css';
-// import GeneralInfo from '../general-info/generalInfo';
-import InstanceSelection from "../instance-selection/instanceSelection"
-// import PeriodInfo from "./components/period-info/periodInfo"
+import "./App.css";
+import InstanceSelection from "../instance-selection/instanceSelection";
 
 function App() {
-  return (
-    <InstanceSelection />
-      // <GeneralInfo />
-  );
+  return <InstanceSelection />;
 }
 
 export default App;
