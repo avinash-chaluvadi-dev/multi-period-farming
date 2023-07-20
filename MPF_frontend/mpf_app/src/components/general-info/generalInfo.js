@@ -63,7 +63,7 @@ const GeneralInfo = (props) => {
       total_land_area_available: totalLand,
     };
     let produceList = produceItems.map((item) => {
-      return { produce: item };
+      return { produce: item, time_periods: timePeriod };
     });
     setgeneralResponse(produceList);
 

@@ -51,8 +51,9 @@ const ProduceInfo = (props) => {
   };
 
   const handleProduceInfo = async () => {
+    console.log(produceItems);
     produceItems.forEach((item, index) => {
-      item.produce = generalResponse.produce[index];
+      item.produce = generalResponse[index].produce;
     });
     try {
       const response = await fetch("http://127.0.0.1:8000/produce_info", {

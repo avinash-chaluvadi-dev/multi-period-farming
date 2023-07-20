@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./periodInfo.css";
 
 const PeriodInfo = ({ generalResponse }) => {
+  console.log(generalResponse);
   const [periodItems, setPeriodItems] = useState([]);
   const periodArray = Array.from(
-    { length: generalResponse.time_periods },
+    { length: generalResponse[0].time_periods },
     (_, index) => index + 1
   );
 
@@ -28,14 +29,26 @@ const PeriodInfo = ({ generalResponse }) => {
       });
 
       const result = await response.json();
-      // setProduceInfoStatus(true);
     } catch (error) {
       console.error("Error:", error);
     }
   };
 
-  // const number = 52
-  // const periodArray = Array.from({ length: number }, (_, index) => index + 1);
+  const handleOptimize = async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:8000/optimize");
+      const result = await response.blob(); // get the response as a blob
+      const url = window.URL.createObjectURL(result);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "output.txt"); // or any other extension
+      document.body.appendChild(link);
+      link.click();
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <div className="period-background">
       <div className="period-info">
@@ -222,8 +235,12 @@ const PeriodInfo = ({ generalResponse }) => {
             </div>
           </div>
           <div className="period-info-button-container">
-            <button className="optimize-button">Save</button>
-            <button className="optimize-button">Optimize</button>
+            <button className="optimize-button" onClick={handlePeriodInfo}>
+              Save
+            </button>
+            <button className="optimize-button" onClick={handleOptimize}>
+              Optimize
+            </button>
           </div>
         </div>
       </div>
