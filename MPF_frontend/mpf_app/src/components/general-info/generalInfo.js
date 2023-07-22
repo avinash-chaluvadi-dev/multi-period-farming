@@ -34,9 +34,11 @@ const GeneralInfo = (props) => {
         })
         .then((response) => response.json())
         .then((data) => {
-          let produceList = data.map((item) => {
-            return { produce: item.produce };
-          });
+          // let produceList = data.map((item) => {
+          //   return { produce: item.produce };
+          // });
+          let produceList = data.map((item) => item.produce);
+          console.log(produceList);
           responseObject.produce = produceList;
           setgeneralResponse(responseObject);
           setProduceItems(produceList);
@@ -52,6 +54,7 @@ const GeneralInfo = (props) => {
   const handleChangeProduce = (value, index) => {
     const newFormValues = [...produceItems];
     newFormValues[index] = value;
+    console.log(newFormValues);
     setProduceItems(newFormValues);
   };
 
@@ -67,20 +70,41 @@ const GeneralInfo = (props) => {
     });
     setgeneralResponse(produceList);
 
-    try {
-      const response = await fetch("http://127.0.0.1:8000/general_info", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+    if (instance_name) {
+      try {
+        const response = await fetch(
+          `http://127.0.0.1:8000/general_info/${primaryKey}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          }
+        );
 
-      const result = await response.json();
-      setDataSavedState(true);
-      // setgeneralResponse(result);
-    } catch (error) {
-      console.error("Error:", error);
+        const result = await response.json();
+        setDataSavedState(true);
+        // setgeneralResponse(result);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/general_info", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+        setDataSavedState(true);
+        // setgeneralResponse(result);
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   };
 
@@ -92,8 +116,9 @@ const GeneralInfo = (props) => {
     <>
       {showComponent && (
         <ProduceInfo
-          generalResponse={generalResponse}
           primaryKey={primaryKey}
+          instanceName={instanceName}
+          generalResponse={generalResponse}
         />
       )}
       {!showComponent && (
@@ -191,7 +216,7 @@ const GeneralInfo = (props) => {
                         id="produce"
                         className="input-field"
                         placeholder="Crop name"
-                        defaultValue={_item.produce}
+                        defaultValue={_item}
                         onChange={(event) =>
                           handleChangeProduce(event.target.value, index)
                         }

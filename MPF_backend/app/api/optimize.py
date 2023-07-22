@@ -1,5 +1,5 @@
 import timeit
-
+import json
 import fastapi
 import gurobipy as gp
 import pandas as pd
@@ -22,10 +22,16 @@ router = fastapi.APIRouter()
     "/optimize",
     tags=["Multi Period Farming Optimization"],
 )
-async def optimize(db: Session = Depends(get_db)):
+async def optimize(id: int = None, db: Session = Depends(get_db)):
     start = timeit.default_timer()
-    latest_primary_record = db.query(PrimaryKey).order_by(PrimaryKey.id.desc()).first()
-    latest_id = latest_primary_record.id
+    if id is not None:
+        latest_id = id
+        latest_primary_record = db.query(PrimaryKey).filter(PrimaryKey.id == id).first()
+    else:
+        latest_primary_record = (
+            db.query(PrimaryKey).order_by(PrimaryKey.id.desc()).first()
+        )
+        latest_id = latest_primary_record.id
     LandAvailable = latest_primary_record.total_land_area_available
 
     general_info = (
@@ -55,6 +61,7 @@ async def optimize(db: Session = Depends(get_db)):
     ProducePeriodSheet = datafile.sheet_by_name(datafile.sheet_names()[0])
     PeriodSheet = pd.DataFrame(period_info_records)
 
+    print("geberal", GeneralInfoSheet)
     # Sets
     produce = []
 
@@ -411,6 +418,9 @@ async def optimize(db: Session = Depends(get_db)):
     OutputFile.close()
     m.write("model/model.lp")
 
-    return JSONResponse(
-        content={"message": "MultiPeriod Farming model optimized successfully"}
-    )
+    with open("output/Output.txt", "r") as file:
+        contents = file.read()
+        return contents
+    # return JSONResponse(
+    #     content={"message": "MultiPeriod Farming model optimized successfully"}
+    # )

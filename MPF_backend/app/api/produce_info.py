@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 
 from app.db.db_setup import get_db
 from app.db.models.general_info import GeneralInfo, PrimaryKey
+from app.db.models.produce_info import ProduceInfo as ProduceInfoModel
 from app.schemas.produce_info import ProduceInfo, ProduceInfoBase
 
 from .utils.produce_info import (
@@ -57,3 +58,15 @@ async def read_single_produce_info(id: int, db: Session = Depends(get_db)):
     if produce_info_item is None:
         raise HTTPException(status_code=404, detail="Produce Info record not found")
     return produce_info_item
+
+
+@router.patch(
+    "/produce_info/{id}",
+    tags=["Multi Period Farming Produce Info"],
+)
+async def patch_produce_info(
+    id: int, produce_info: List[ProduceInfoBase], db: Session = Depends(get_db)
+):
+    db.query(ProduceInfoModel).filter(ProduceInfoModel.primary_key_id == id).delete()
+    create_produce_info(db=db, produce_info=produce_info, primary_key_id=id)
+    db.commit()

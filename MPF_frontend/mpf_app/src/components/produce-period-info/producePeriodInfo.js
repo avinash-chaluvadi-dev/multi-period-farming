@@ -1,17 +1,36 @@
 import axios from "axios";
 import "./producePeriodInfo.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import fileIcon from "../../assets/file-icon.svg";
 import PeriodInfo from "../period-info/periodInfo";
 
-const ProducePeriodInfo = ({ generalResponse }) => {
+const ProducePeriodInfo = (props) => {
+  const { primaryKey } = props;
+  const { instanceName } = props;
+  const { generalResponse } = props;
+
+  const inputRef = React.useRef(null);
   const [fileProgress, setFileProgress] = useState(0);
   const [fileUploaded, setfileUploaded] = useState(false);
   const [dragActive, setDragActive] = React.useState(false);
   const [showComponent, setShowComponent] = useState(false);
   const [uploadedFileName, setUploadedFileName] = useState("");
+  const [pastUploadedName, setPastUploadedName] = useState(false);
 
-  const inputRef = React.useRef(null);
+  useEffect(() => {
+    if (primaryKey) {
+      try {
+        fetch(`http://localhost:8000/produce_period_info/${primaryKey}`)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            setPastUploadedName(data);
+          });
+      } catch (error) {
+        console.log("Error:", error);
+      }
+    }
+  }, [primaryKey]);
 
   const handleFile = (files) => {
     const file = files[0];
@@ -25,16 +44,28 @@ const ProducePeriodInfo = ({ generalResponse }) => {
       setFileProgress(progress);
       if (progress === 100) {
         clearInterval(interval);
-
-        // Make the API call
-        axios
-          .post("http://127.0.0.1:8000/produce_period_info", formData)
-          .then((response) => {
-            setfileUploaded(true);
-          })
-          .catch((error) => {
-            alert("File Upload failed!");
-          });
+        if (primaryKey) {
+          axios
+            .patch(
+              `http://127.0.0.1:8000/produce_period_info/${primaryKey}`,
+              formData
+            )
+            .then((response) => {
+              setfileUploaded(true);
+            })
+            .catch((error) => {
+              alert("File Upload failed!");
+            });
+        } else {
+          axios
+            .post("http://127.0.0.1:8000/produce_period_info", formData)
+            .then((response) => {
+              setfileUploaded(true);
+            })
+            .catch((error) => {
+              alert("File Upload failed!");
+            });
+        }
       }
     }, 500);
   };
@@ -76,7 +107,7 @@ const ProducePeriodInfo = ({ generalResponse }) => {
   return (
     <>
       {showComponent ? (
-        <PeriodInfo generalResponse={generalResponse} />
+        <PeriodInfo primaryKey={primaryKey} generalResponse={generalResponse} />
       ) : (
         <div className="produce-period-background">
           <div className="produce-period-info">
@@ -136,6 +167,12 @@ const ProducePeriodInfo = ({ generalResponse }) => {
                   className={dragActive ? "drag-active" : ""}
                 >
                   <div className="produce-period-info-input">
+                    {pastUploadedName && (
+                      <p className="drag-files">
+                        Uploaded file corresponding to {instanceName} --{">"}{" "}
+                        {pastUploadedName}
+                      </p>
+                    )}
                     <button className="upload-file" onClick={onButtonClick}>
                       Upload File Here (xlsx)
                     </button>

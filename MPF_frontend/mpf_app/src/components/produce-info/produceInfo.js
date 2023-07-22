@@ -6,6 +6,7 @@ import dataCloseIcon from "../../assets/file-close.svg";
 
 const ProduceInfo = (props) => {
   const { primaryKey } = props;
+  const { instanceName } = props;
   const { generalResponse } = props;
 
   const [infoRecords, setInfoRecords] = useState([]);
@@ -14,16 +15,6 @@ const ProduceInfo = (props) => {
   const [dataSavedState, setDataSavedState] = useState(false);
   const [produceInfoStatus, setProduceInfoStatus] = useState(false);
 
-  const generalInfoRecords = async (id) => {
-    try {
-      const response = await fetch(`http://localhost:8000/general_info${id}`);
-      const result = await response.json();
-      return result;
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
   useEffect(() => {
     if (primaryKey) {
       try {
@@ -31,11 +22,13 @@ const ProduceInfo = (props) => {
           .then((response) => response.json())
           .then((data) => {
             setInfoRecords(data);
+            setProduceItems(data);
           });
       } catch (error) {
         console.log("Error:", error);
       }
     } else {
+      console.log(generalResponse);
       setInfoRecords(generalResponse);
     }
   }, [generalResponse.id]);
@@ -52,30 +45,55 @@ const ProduceInfo = (props) => {
 
   const handleProduceInfo = async () => {
     console.log(produceItems);
-    produceItems.forEach((item, index) => {
-      item.produce = generalResponse[index].produce;
-    });
-    try {
-      const response = await fetch("http://127.0.0.1:8000/produce_info", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(produceItems),
+    console.log(generalResponse);
+    if (primaryKey) {
+      try {
+        const response = await fetch(
+          `http://127.0.0.1:8000/produce_info/${primaryKey}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(produceItems),
+          }
+        );
+        const result = await response.json();
+        setDataSavedState(true);
+        // setgeneralResponse(result);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      produceItems.forEach((item, index) => {
+        item.produce = generalResponse[index].produce;
       });
+      try {
+        const response = await fetch("http://127.0.0.1:8000/produce_info", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(produceItems),
+        });
 
-      const result = await response.json();
-      setDataSavedState(true);
-      setProduceInfoStatus(true);
-    } catch (error) {
-      console.error("Error:", error);
+        const result = await response.json();
+        setDataSavedState(true);
+        setProduceInfoStatus(true);
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   };
 
   return (
     <>
       {showComponent ? (
-        <ProducePeriodInfo generalResponse={generalResponse} />
+        <ProducePeriodInfo
+          primaryKey={primaryKey}
+          instanceName={instanceName}
+          generalResponse={generalResponse}
+        />
       ) : (
         <div className="background">
           <div className="produce-info">
@@ -136,7 +154,7 @@ const ProduceInfo = (props) => {
                     </tr>
                   </thead>
                   <tbody>
-                    {infoRecords.map((item, index) => (
+                    {infoRecords?.map((item, index) => (
                       <tr
                         className={index % 2 === 0 ? "even-row" : "odd-row"}
                         key={index}
@@ -155,7 +173,12 @@ const ProduceInfo = (props) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
-                            value={item.time_to_harvest}
+                            defaultValue={
+                              item.time_to_harvest === 0 ||
+                              item.time_to_harvest === 0.0
+                                ? ""
+                                : item.time_to_harvest
+                            }
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -169,7 +192,12 @@ const ProduceInfo = (props) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
-                            value={item.lead_time_to_purchase}
+                            defaultValue={
+                              item.lead_time_to_purchase === 0 ||
+                              item.lead_time_to_purchase === 0.0
+                                ? ""
+                                : item.lead_time_to_purchase
+                            }
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -183,7 +211,12 @@ const ProduceInfo = (props) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
-                            value={item.man_hours_required_per_acre}
+                            defaultValue={
+                              item.man_hours_required_per_acre === 0 ||
+                              item.man_hours_required_per_acre === 0.0
+                                ? ""
+                                : item.man_hours_required_per_acre
+                            }
                             onChange={(e) =>
                               handleChange(
                                 index,
@@ -197,7 +230,12 @@ const ProduceInfo = (props) => {
                           <input
                             className="produce-info-table-input"
                             type="text"
-                            value={item.fraction_lost_per_period}
+                            defaultValue={
+                              item.fraction_lost_per_period === 0 ||
+                              item.fraction_lost_per_period === 0.0
+                                ? ""
+                                : item.fraction_lost_per_period
+                            }
                             onChange={(e) =>
                               handleChange(
                                 index,

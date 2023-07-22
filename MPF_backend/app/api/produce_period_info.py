@@ -1,9 +1,8 @@
-import json
+import os
 
 import fastapi
 from fastapi import Depends, File, HTTPException, UploadFile
 from fastapi.responses import JSONResponse
-from pandas import read_excel
 from sqlalchemy.orm import Session
 
 from app.db.db_setup import get_db
@@ -50,12 +49,30 @@ async def create_new_produce_period_info(
 )
 async def read_single_produce_period_info(id: int, db: Session = Depends(get_db)):
     produce_period_info_item = (
-        db.query(ProducePeriodInfo).filter(ProducePeriodInfo.id == id).first()
+        db.query(ProducePeriodInfo)
+        .filter(ProducePeriodInfo.primary_key_id == id)
+        .first()
     )
-    produce_period_file = produce_period_info_item.produce_period_file
-    produce_period_dataframe = read_excel(produce_period_file)
-    data = json.dumps(produce_period_dataframe.head().to_dict(orient="records"))
-
     if produce_period_info_item is None:
         raise HTTPException(status_code=404, detail="General Info record not found")
-    return data
+    else:
+        produce_period_file = produce_period_info_item.produce_period_file
+        return os.path.basename(produce_period_file)
+
+
+@router.patch(
+    "/produce_period_info/{id}",
+    tags=["Multi Period Farming Produce Period Info"],
+)
+async def patch_single_produce_period_info(
+    id: int, file: UploadFile = File(...), db: Session = Depends(get_db)
+):
+    try:
+        print("Inside patch")
+        contents = await file.read()
+        produce_period_file = f"input/produce_period_info_{id}.xls"
+        with open(produce_period_file, "wb") as f:
+            f.write(contents)
+
+    except Exception as e:
+        return JSONResponse(content={"message": f"Error processing file: {str(e)}"})

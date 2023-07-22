@@ -1,6 +1,7 @@
 {
     "time_periods": 52,
     "total_land_area_available": 10,
+    "instance_name": "mpf_test_instance",
     "produce": [
         "Pumpkin",
         "Beetroot",

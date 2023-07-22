@@ -7,7 +7,7 @@ from app.schemas.period_info import PeriodInfoCreate
 
 
 def get_single_period_info(db: Session, id: int):
-    return db.query(PeriodInfo).filter(PeriodInfo.id == id).first()
+    return db.query(PeriodInfo).filter(PeriodInfo.primary_key_id == id).all()
 
 
 def get_period_info(db: Session, skip: int = 0, limit: int = 100):

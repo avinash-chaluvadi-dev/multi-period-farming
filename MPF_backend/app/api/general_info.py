@@ -5,7 +5,9 @@ from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.db.db_setup import get_db
+from app.db.models.general_info import GeneralInfo as GeneralInfoModel
 from app.db.models.general_info import PrimaryKey
+from app.db.models.produce_info import ProduceInfo as ProduceInfoModel
 from app.schemas.general_info import GeneralInfo, GeneralInfoCreate, PrimaryKeyBase
 
 from .utils.general_info import (
@@ -63,3 +65,37 @@ async def read_single_general_info(id: int, db: Session = Depends(get_db)):
     if general_info_item is None:
         raise HTTPException(status_code=404, detail="General Info record not found")
     return general_info_item
+
+
+@router.patch(
+    "/general_info/{id}",
+    tags=["Multi Period Farming General Info"],
+)
+async def patch_general_info(
+    id: int, general_info: PrimaryKeyBase, db: Session = Depends(get_db)
+):
+    db.query(GeneralInfoModel).filter(GeneralInfoModel.primary_key_id == id).delete()
+    primary_key_item = db.query(PrimaryKey).filter(PrimaryKey.id == id).first()
+    primary_key_item.time_periods = general_info.time_periods
+    primary_key_item.total_land_area_available = general_info.total_land_area_available
+    db.commit()
+
+    create_general_info(db=db, general_info=general_info.produce, primary_key_id=id)
+
+    produce_items = (
+        db.query(ProduceInfoModel).filter(ProduceInfoModel.primary_key_id == id).all()
+    )
+    existing_produce = [item.produce for item in produce_items]
+    print(produce_items)
+    for produce in general_info.produce:
+        if produce not in existing_produce:
+            new_produce = ProduceInfoModel(
+                produce=produce,
+                primary_key_id=id,
+                time_to_harvest=0,
+                lead_time_to_purchase=0,
+                man_hours_required_per_acre=0,
+                fraction_lost_per_period=0,
+            )
+            db.add(new_produce)
+    db.commit()

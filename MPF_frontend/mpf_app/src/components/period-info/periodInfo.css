@@ -33,13 +33,13 @@ body {
   display: flex;
   font-family: "Lato";
   justify-content: space-between;
-  padding: 8px 250px 0;
+  padding: 8px 320px 0;
   width: 900px;
   margin-top: 2px;
 }
 .period-info-input-container {
   /* min-width: 1200px; */
-  width: fit-content;
+  min-width: fit-content;
   /* width: 100%; */
   overflow-x: auto;
   min-height: 500px;

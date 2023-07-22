@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./periodInfo.css";
 
-const PeriodInfo = ({ generalResponse }) => {
-  console.log(generalResponse);
+const PeriodInfo = (props) => {
+  const { primaryKey } = props;
+  const { instance_name } = props;
+  const { generalResponse } = props;
+
   const [periodItems, setPeriodItems] = useState([]);
-  const periodArray = Array.from(
-    { length: generalResponse[0].time_periods },
-    (_, index) => index + 1
-  );
 
   const handleChange = (index, field, value) => {
     const newPeriodItems = [...periodItems];
@@ -15,37 +14,106 @@ const PeriodInfo = ({ generalResponse }) => {
     setPeriodItems(newPeriodItems);
   };
 
-  const handlePeriodInfo = async () => {
-    periodItems.forEach((item, index) => {
-      item.time_period = periodArray[index];
-    });
-    try {
-      const response = await fetch("http://127.0.0.1:8000/period_info", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(periodItems),
+  useEffect(() => {
+    if (primaryKey) {
+      try {
+        fetch(`http://localhost:8000/period_info/${primaryKey}`)
+          .then((response) => response.json())
+          .then((data) => {
+            setPeriodItems(data);
+          });
+      } catch (error) {
+        console.log("Error:", error);
+      }
+    } else {
+      const periodArray = Array.from(
+        { length: generalResponse[0].time_periods },
+        (_, index) => ({ time_period: index + 1 })
+      );
+      setPeriodItems(periodArray);
+      periodItems.forEach((item, index) => {
+        item.time_period = periodArray[index];
       });
+    }
+  }, [generalResponse.id]);
 
-      const result = await response.json();
-    } catch (error) {
-      console.error("Error:", error);
+  const handlePeriodInfo = async () => {
+    if (primaryKey) {
+      try {
+        const response = await fetch(
+          `http://127.0.0.1:8000/period_info/${primaryKey}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(periodItems),
+          }
+        );
+
+        const result = await response.json();
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/period_info", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(periodItems),
+        });
+
+        const result = await response.json();
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   };
 
   const handleOptimize = async () => {
-    try {
-      const response = await fetch("http://127.0.0.1:8000/optimize");
-      const result = await response.blob(); // get the response as a blob
-      const url = window.URL.createObjectURL(result);
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "output.txt"); // or any other extension
-      document.body.appendChild(link);
-      link.click();
-    } catch (error) {
-      console.error("Error:", error);
+    if (primaryKey) {
+      try {
+        let periodURL = new URL("http://127.0.0.1:8000/optimize");
+        periodURL.searchParams.append("id", primaryKey);
+        const response = await fetch(periodURL);
+        const result = await response.text();
+
+        // Replace escaped new lines and double quotes with empty lines
+        const unescapedResult = result.replace(/\\n/g, "\n").replace(/"/g, "");
+
+        // Create a Blob from the text content
+        const blob = new Blob([unescapedResult], { type: "text/plain" });
+
+        // Create a URL for the Blob
+        const url = window.URL.createObjectURL(blob);
+
+        // Create a link element to initiate the download
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "output.txt");
+        document.body.appendChild(link);
+        link.click();
+
+        // Clean up
+        window.URL.revokeObjectURL(url);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/optimize");
+        const result = await response.text();
+        const url = window.URL.createObjectURL(result);
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "output.txt");
+        document.body.appendChild(link);
+        link.click();
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   };
 
@@ -111,7 +179,7 @@ const PeriodInfo = ({ generalResponse }) => {
                   </tr>
                 </thead>
                 <tbody>
-                  {periodArray?.map((item, index) => (
+                  {periodItems?.map((item, index) => (
                     <tr
                       className={index % 2 != 0 ? "even-row" : "odd-row"}
                       key={index}
@@ -120,7 +188,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
-                          value={item}
+                          value={item.time_period}
                           // placeholder={index % 2 === 0 ? "Produce" : ""}
                         />
                       </td>
@@ -128,6 +196,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.inventory_holding_cost}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -141,6 +210,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.water_available_in_litres}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -154,6 +224,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.water_cost_per_litre}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -167,6 +238,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.available_man_hours}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -180,6 +252,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.labour_cost_per_man_hour}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -193,6 +266,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.fertilizer_cost_per_kg}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -206,6 +280,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.energy_cost_per_unit}
                           onChange={(e) =>
                             handleChange(
                               index,
@@ -219,6 +294,7 @@ const PeriodInfo = ({ generalResponse }) => {
                         <input
                           className="produce-info-table-input"
                           type="text"
+                          defaultValue={item.fertilizer_required_per_acre}
                           onChange={(e) =>
                             handleChange(
                               index,

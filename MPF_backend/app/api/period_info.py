@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 
 from app.db.db_setup import get_db
 from app.db.models.general_info import GeneralInfo, PrimaryKey
+from app.db.models.period_info import PeriodInfo as PeriodInfoModel
 from app.schemas.period_info import PeriodInfo, PeriodInfoCreate
 
 from .utils.period_info import (
@@ -45,7 +46,7 @@ async def create_new_period_info(
 
 @router.get(
     "/period_info/{id}",
-    response_model=PeriodInfo,
+    response_model=List[PeriodInfo],
     tags=["Multi Period Farming Period Info"],
 )
 async def read_single_period_info(id: int, db: Session = Depends(get_db)):
@@ -53,3 +54,15 @@ async def read_single_period_info(id: int, db: Session = Depends(get_db)):
     if produce_info_item is None:
         raise HTTPException(status_code=404, detail="Period Info record not found")
     return produce_info_item
+
+
+@router.patch(
+    "/period_info/{id}",
+    tags=["Multi Period Farming Period Info"],
+)
+async def patch_period_info(
+    id: int, period_info: List[PeriodInfoCreate], db: Session = Depends(get_db)
+):
+    db.query(PeriodInfoModel).filter(PeriodInfoModel.primary_key_id == id).delete()
+    create_period_info(db=db, period_info=period_info, primary_key_id=id)
+    db.commit()

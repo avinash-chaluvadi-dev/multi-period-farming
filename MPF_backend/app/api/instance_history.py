@@ -26,7 +26,7 @@ async def read_instance_history(db: Session = Depends(get_db)):
 @router.get(
     "/instance_history/primary_key",
     tags=["Multi Period Farming Instance History"],
-    response_model=InstanceHistoryPrimary
+    response_model=InstanceHistoryPrimary,
 )
 async def read_primary_key(instance_name: str, db: Session = Depends(get_db)):
     return (
