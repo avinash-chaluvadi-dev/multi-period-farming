@@ -2984,5 +2984,5 @@ InventoryCost: R12583.70
 
 NET PROFIT: R-466760.25
 
-Run time(calculated): 0.27
-Run time(Gurobi): 0.0516651 seconds
+Run time(calculated): 0.19
+Run time(Gurobi): 0.0500169 seconds

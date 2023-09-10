@@ -61,7 +61,6 @@ async def optimize(id: int = None, db: Session = Depends(get_db)):
     ProducePeriodSheet = datafile.sheet_by_name(datafile.sheet_names()[0])
     PeriodSheet = pd.DataFrame(period_info_records)
 
-    print("geberal", GeneralInfoSheet)
     # Sets
     produce = []
 
