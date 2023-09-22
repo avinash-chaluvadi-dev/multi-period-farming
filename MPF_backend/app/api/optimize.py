@@ -236,10 +236,11 @@ async def optimize(id: int = None, db: Session = Depends(get_db)):
                 c = InventoryQty[j, t - 1]
             else:
                 c = 0
+            print(a, b, c, fractionlost[j], ShippingQty[j,t], InventoryQty[j,t])
             m.addConstr(
-                a + b + (1 - fractionlost[j]) * c
+                a + b + (1 - float(fractionlost[j])) * c
                 == ShippingQty[j, t] + InventoryQty[j, t],
-                "InvBalanceConstraint",
+                "InvBalanceConstraint"
             )
 
     for j in produce:
